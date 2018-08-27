@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>부트스트랩의 GRID 시스템</title>
+
+       <link rel="stylesheet" href="../style/css/bootstrap.css">
+       <script src="../style/js/jquery-3.3.1.js"></script>
+       <script src="../style/js/popper.js"></script>
+       <script src="../style/js/bootstrap.js"></script>
+       
+       <style>
+           .row > div{
+               border: 1px dashed black;
+               margin: 5px 0px;
+           }
+       </style>    
+    </head>
+
+    <body>
+        <!--부트스트랩의 GRID 시스템은 block레벨 방식의 공간 태그 div에 총 12칸을 주고 그 안에 html 태그를 배치하여 화면을 꾸미는 방식 -->
+        <!-- 부트스트랩의 column의 총 합은 12를 넘을 수 없다. 12를 넘으면 밑으로 내려간다. -->
+        <!-- 주로 가장 베이스가 되는 container 안에서 사용한다. -->
+        <!-- 부트스트랩에서 row 안에 column이 존재할 수 있음 -->
+        <!-- column안에 row는 못들어감 -->
+
+        <!-- GRID SYSTEM CLASS는 5개가 있다. -->
+        <!-- .col-숫자 : 추가 소형 장치 - 화면 너비가 576px 미만 -->
+        <!-- .col-sm-숫자 : 스마트폰용 - 화면너비가 576px 이상 (small) -->
+        <!-- .col-md-숫자 : 스마트패드용 - 화면너비가 768px 이상 (middle)-->
+        <!-- .col-lg-숫자 : 미니노트북용 - 화면너비가 992px 이상 (large)-->
+        <!-- .col-xl 숫자 : 데스크탑용 - 화면너비 1200px 이상 (x-large)-->
+
+        <div class="container text-center">
+            <div class="row" style="background-color : lightblue;">
+                <div class="col-md-1">공간 1</div>
+                <div class="col-md-1">공간 2</div>
+                <div class="col-md-1">공간 3</div>
+                <div class="col-md-1">공간 4</div>
+                <div class="col-md-1">공간 5</div>
+                <div class="col-md-1">공간 6</div>
+                <div class="col-md-1">공간 7</div>
+                <div class="col-md-1">공간 8</div>
+                <div class="col-md-1">공간 9</div>
+                <div class="col-md-1">공간 10</div>
+                <div class="col-md-1">공간 11</div>
+                <div class="col-md-1">공간 12</div>
+            </div>
+            <!-- 768까지는 가로의 모양을 유지, 767이 되면 세로로 쌓아져버림 -->
+            <!-- 만약 col-sm1씩을 준다면 576px까지는 가로로 정렬되지만 575가되면 공간 자체가 세로로 정렬됨-->
+            <!-- row를 ul col은 li -->
+            <!-- 그리드 시스템을 사용하면 반응형 웹을 쉽게 만들 수 있다. -->
+            <div class="row" style="background-color : lightcoral;">
+                <div class="col-md-3">공간 3</div>
+                <div class="col-md-3">공간 3</div>
+                <div class="col-md-3">공간 3</div>
+                <div class="col-md-3">공간 3</div>
+            </div>
+            <div class="row" style="background-color :lightgreen;"> 
+                <div class="col-md-4">공간 4</div>
+                <div class="col-md-4">공간 4</div>
+                <div class="col-md-4">공간 4</div>
+            </div>
+            <div class="row" style="background-color :lightsalmon;"> 
+                <div class="col-md-4">공간 4</div>
+                <div class="col-md-8">공간 8</div>
+            </div>
+            <div class="row" style="background-color : lightskyblue;">
+                <div class="col-md-6">공간 6</div>
+                <div class="col-md-6">공간 6</div>
+            </div>
+            <div class="row" style="background-color : lightseagreen;">
+                <div class="col-md-12">공간 12</div>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="container-fluid text-center">
+                <div class="row" style="background-color : lightblue;">
+                    <div class="col-md-1">공간 1</div>
+                    <div class="col-md-1">공간 2</div>
+                    <div class="col-md-1">공간 3</div>
+                    <div class="col-md-1">공간 4</div>
+                    <div class="col-md-1">공간 5</div>
+                    <div class="col-md-1">공간 6</div>
+                    <div class="col-md-1">공간 7</div>
+                    <div class="col-md-1">공간 8</div>
+                    <div class="col-md-1">공간 9</div>
+                    <div class="col-md-1">공간 10</div>
+                    <div class="col-md-1">공간 11</div>
+                    <div class="col-md-1">공간 12</div>
+                    <!-- 1개를 더주면 내려간다. -->
+                </div>
+                <!-- row를 ul col은 li -->
+                <div class="row" style="background-color : lightcoral;">
+                    <div class="col-md-3">공간 3</div>
+                    <div class="col-md-3">공간 3</div>
+                    <div class="col-md-3">공간 3</div>
+                    <div class="col-md-3">공간 3</div>
+                </div>
+                <div class="row" style="background-color :lightgreen;"> 
+                    <div class="col-md-4">공간 4</div>
+                    <div class="col-md-4">공간 4</div>
+                    <div class="col-md-4">공간 4</div>
+                </div>
+                <div class="row" style="background-color :lightsalmon;"> 
+                    <div class="col-md-4">공간 4</div>
+                    <div class="col-md-8">공간 8</div>
+                </div>
+                <div class="row" style="background-color : lightskyblue;">
+                    <div class="col-md-6">공간 6</div>
+                    <div class="col-md-6">공간 6</div>
+                </div>
+                <div class="row" style="background-color : lightseagreen;">
+                    <div class="col-md-12">공간 12</div>
+                </div>
+                <div class="row" style="background-color : lightseagreen;">
+                    <div class="col-sm">공간</div>
+                    <div class="col-sm"></div>
+                    <div class="col-sm"></div>
+                    <div class="col-sm"></div>
+                    <!-- 위에 숫자를 안줘도 col-sm을 하면 알아서 12개의 그리드에서 똑같이 등분해서 준다. 5,7개도 같은 너비로 나눠서 등분 가능 -->
+                </div>
+            </div>
+            <!-- GRID 시스템은 일정크기 이하로 줄어드면 한줄에 한칸짜리로 줄어들게된다. -->
+    </body>
+    </html>

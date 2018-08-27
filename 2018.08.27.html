@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    #bg{
+        position: fixed;
+        top: 0;
+        left : 0;   
+        /* 포지션 후에 top과 left를 각 0을 줘서(0,0)에 위치 하게한거*/
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -100;
+
+        background: url("flame.jpg") left top no-repeat ;
+        background-size: cover;
+        /* 스마트폰 사용자를 위해서 flame.jpg를 넣음 
+        스마트폰에서는 동영상 풀스크린 배경을 사용할 수 없기 때문에 동영상을 대신해서 넣을 부분임*/
+
+    }  
+    #container{
+
+        text-align: center;
+        margin-left: 30%;
+        margin-top: 30%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Summer beach</h1>
+    <video autoplay loop controls muted width="400px" height="220px">
+        <source src="../media/Beach-o.ogv" type="video/ogg">
+        <source src="../media/Beach-w.webm" type="video/webm">
+        <source src="../media/Beach.mp4" type="video/mp4">
+    </video>
+    <video src="../media/flame.mp4" autoplay muted loop poster="flame.jpg" id="bg"></video>
+    <div id="container">
+    <h3>사람을 구체적으로 도와주는 책</h3>
+    <h1>이지스퍼블리싱</h1>
+    </div>
+</body>
+</html>
