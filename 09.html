@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>부트스트랩의 테이블</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- 부트스트랩에서 img를 사용하면 3가지 형태의 이미지 외곽틀을 사용할 수 있음 -->
+            <!-- class명을 rounded, rounded-circle, img-thumbnail -->
+            <h3>모서리가 rounded처리된 이미지</h3>
+            <img src="../img/apple2.jpg" class="rounded" alt="사과" width="320" height="240">
+        </article>
+        <br>
+        <article>
+            <h3>원형 이미지</h3>
+            <img src="../img/pic2.jpg" class="rounded-circle" alt="인형" width="320" height="240">
+        </article>
+        <article>
+            <h3>썸네일 이미지</h3>
+            <img src="../img/pic3.jpg" class="img-thumbnail" alt="인형" width="320" height="240">
+            <!-- 약간 띄워진 테두리가 들어간다. -->
+        </article>
+        <br>
+        <article>
+            <!-- mx-auto는 css의 margin:auto를 뜻함-->
+            <!-- d-block은 css의 display:block을 뜻함 -->
+            <h3>이미지 중앙 정렬하기</h3>
+            <img src="../img/lighthouse.jpg" alt="등대" class="mx-auto d-block" width="320" height="240">
+        </article>
+        <!-- 문제 1 : 부트스트랩의 grid 시스템과 이미지 중 썸네일을 이용해서 이미지 갤러리를 만드세요-->
+        <!-- 한줄에 이미지가 3개가 나오는 형태로 표시 -->
+        <!-- 사진 크기는 style="width : 100%" -->
+        <br> <hr> <br>
+        <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"> <img src="../img/apple2.jpg" alt="사과" class="img-thumbnail" style="width:100%; height: 100%;"> 
+                    <p>1번 이미지</p></div>
+                <div class="col-md-4"> <img src="../img/snow.jpg" alt="눈" class="img-thumbnail" style="width:100%; height: 100%;"> 
+                    <p>2번 이미지</p></div>
+                <div class="col-md-4"> <img src="../img/choco.jpg" alt="초코" class="img-thumbnail" style="width:100%; height: 100%;"> 
+                    <p>3번 이미지</p></div>
+            </div>
+        </div>
+        </article>
+        <br><br>
+        <article>
+            <!-- float 사용하기 -->
+            <h3>image에 float left/right 사용</h3>
+            <img src="../img/book.png" alt="" class="float-left" width="320" height="240">
+            <img src="../img/garlic.jpg" alt="" class="float-right" width="320" height="240">
+            <!-- 먼저준거가 먼저 그 위치에 붙는다. -->
+        </article> 
+    </section>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+</html>

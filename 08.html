@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>부트스트랩의 테이블</title>
+
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+</head>
+<body>
+    <section class="container">
+        <!-- 부트스트랩의 테이블은 미리 디자인된 테이블을 사용 -->
+        <!-- class명에 table이라고 입력하면 바로 사용 가능 -->
+        <!-- thead와 tbody가 반드시 사용되어야 함 -->
+        <article>
+            <p>class=table은 부트스트랩에서 디자인된 스타일을 적용하는거 table태그에다 씀</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>포지션</th>
+                        <th>출신</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>가렌</td>
+                        <td>탱커</td>
+                        <td>데마시아</td>
+                    </tr>
+                    <tr>
+                        <td>티모</td>
+                        <td>메이지</td>
+                        <td>밴들시티</td>
+                    </tr>
+                    <tr>
+                        <td>럭스</td>
+                        <td>서포터</td>
+                        <td>데마시아</td>
+                    </tr>
+                </tbody>
+            </table><hr>
+            <p>class = table 후 table-spriped를 하면 번갈아 가면서 표를 구분하게 색을 줌</p>
+            <table class="table table-striped">
+                <!-- table-striped를 사용하면 짝수, 홀수로 나누어서 표를 구분하게 해줌 한줄씩 번갈아가면서 색을 준다. -->
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>포지션</th>
+                        <th>출신</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>다리우스</td>
+                        <td>딜탱</td>
+                        <td>녹서스</td>
+                    </tr>
+                    <tr>
+                        <td>나서스</td>
+                        <td>탱커</td>
+                        <td>슈리마사막</td>
+                    </tr>
+                    <tr>
+                        <td>케이틀린</td>
+                        <td>원딜</td>
+                        <td>필트오버</td>
+                    </tr>
+                </tbody>
+            </table><hr>
+                <p>table 후 table-hover는 마우스를 가져다 댄 행의 색이 진하게 변한다.</p>
+                <table class="table table-hover">
+                        <!-- table-hover는 마우스를 가져다 댄 행의 색상을 변경함, 내 마우스가 어느줄을 보는지 확실하게 알 수 있다. -->
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>포지션</th>
+                            <th>출신</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>카르마</td>
+                            <td>서포터</td>
+                            <td>아이오니아</td>
+                        </tr>
+                        <tr>
+                            <td>초가스</td>
+                            <td>탱커</td>
+                            <td>공허</td>
+                        </tr>
+                        <tr>
+                            <td>이블린</td>
+                            <td>암살자</td>
+                            <td>그림자군도</td>
+                        </tr>
+                    </tbody>
+                </table><hr>
+                <p>table-bordered는 겉의 테두리를 주는것이다.</p>
+                <table class="table table-hover table-striped table-bordered">
+                        <!-- table-hover랑 striped가 같이 들어가고 bordered를 넣으면 테두리가 생김. 이런식으로 계속 옵션을 넣을 수 있다. -->
+                            <thead>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>포지션</th>
+                                    <th>출신</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>트리스타나</td>
+                                    <td>원딜</td>
+                                    <td>아이오니아</td>
+                                </tr>
+                                <tr>
+                                    <td>초가스</td>
+                                    <td>탱커</td>
+                                    <td>공허</td>
+                                </tr>
+                                <tr>
+                                    <td>이블린</td>
+                                    <td>암살자</td>
+                                    <td>그림자군도</td>
+                                </tr>
+                            </tbody>
+                        </table><hr>
+                <p>table table-hovered table-warning table-striped table-bordered 등 여러가지 옵션을 계속 넣을 수 있다(class닌깐)</p>
+                <table class="table table-hover table-striped table-bordered table-warning">
+                    <!-- table-hover랑 striped가 같이 들어가고 bordered를 넣으면 밖의 테두리가 생김.
+                        table-warning을 하여 표색을 노란색으로 바꿈 이런식으로 계속 옵션을 넣을 수 있다. -->
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>포지션</th>
+                            <th>출신</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>럼블</td>
+                            <td>딜탱</td>
+                            <td>밴들시티</td>
+                        </tr>
+                        <tr>
+                            <td>브라움</td>
+                            <td>서포터</td>
+                            <td>타곤</td>
+                        </tr>
+                        <tr>
+                            <td>말자하</td>
+                            <td>메이지</td>
+                            <td>공허</td>
+                        </tr>
+                    </tbody>
+                </table><hr>
+                <p>table-borderless는 표 안의 테두리들을 없앤다.</p>
+                <table class="table table-hover table-striped table-bordered table-borderless table-warning">
+                        <!-- borderless는 안의 테두리를 없애는거 -->
+                            <thead>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>포지션</th>
+                                    <th>출신</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>케인</td>
+                                    <td>암살자</td>
+                                    <td>다르킨</td>
+                                </tr>
+                                <tr>
+                                    <td>루시안</td>
+                                    <td>원딜</td>
+                                    <td>그림자군도</td>
+                                </tr>
+                                <tr>
+                                    <td>쓰레쉬</td>
+                                    <td>서포터</td>
+                                    <td>그림자군도</td>
+                                </tr>
+                            </tbody>
+                </table><hr>
+                <p>table table-primary로 푸른색을 넣기</p>
+                <table class="table table-primary">
+                        <!-- borderless는 안의 테두리를 없애는거 -->
+                            <thead>
+                                <tr>
+                                    <th>이름</th>
+                                    <th>포지션</th>
+                                    <th>출신</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>쉔</td>
+                                    <td>탱커</td>
+                                    <td>아이오니아</td>
+                                </tr>
+                                <tr>
+                                    <td>아칼리</td>
+                                    <td>암살자</td>
+                                    <td>아이오니아</td>
+                                </tr>
+                                <tr>
+                                    <td>케넨</td>
+                                    <td>암살자</td>
+                                    <td>아이오니아</td>
+                                </tr>
+                            </tbody>
+                </table><hr>
+                <!-- 테이블의 각 행에 상황에 맞는 색상을 지정할 수 있음 -->
+                <!-- tr과 td에 각각 색상을 적용할 수 있음 -->
+                <!-- thead에 색상을 적용 할 수 있음 -->
+                <!-- table-primary(파란색), table-secondary(밝은회색), table-warning(노란색), table-danger(빨간색), table-info(청록색), table-dark(진한회색), table-light(흰색)  
+                    table-active(테이블 호버했을때 갔다대면 색이 좀더 진해지는거) -->
+                <!-- thead는 thead-dark, thead-light 이 두개만 먹음 -->
+                <p>table-primary(파란색), warning(노란색), success(초록색), danger(빨간색)등등 쓸 수 있다. </p>
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr class="table-dark">
+                            <th>이름</th>
+                            <th>포지션</th>
+                            <th>출신</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td>제드</td>
+                            <td>암살자</td>
+                            <td>아이오니아</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>카사딘</td>
+                            <td>암살자</td>
+                            <td>공허</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>카타리나</td>
+                            <td>암살자</td>
+                            <td>녹서스</td>
+                        </tr>
+                    </tbody>
+                </table><hr>
+        </article>
+        <article>
+            <!-- 작은형태의 테이블 -->
+            <!-- table-sm옵션을 사용하면 작은 형태의 테이블이 형성됨 -->
+            <table class="table table-hover table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>포지션</th>
+                        <th>출신</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>바드</td>
+                        <td>서포터</td>
+                        <td>불명</td>
+                    </tr>
+                    <tr>
+                        <td>아우렐리온 솔</td>
+                        <td>메이지</td>
+                        <td>타곤</td>
+                    </tr>
+                    <tr>
+                        <td>일라오이</td>
+                        <td>딜탱</td>
+                        <td>빌지워터</td>
+                    </tr>
+                </tbody>
+            </table><hr>
+        </article>
+        <article>
+            <!-- table-responsive를 옵션으로 사용하면 화면 크기에 따라 테이블의 크기가 변경되지 않고 가로 스크롤바가 생성됨  -->
+            <!-- td가 많아야함 -->
+            <!-- table-responsive-sm : 화면크기 576px이상 -->
+            <!-- table-responsive-md : 화면크기 768px이상 -->
+            <!-- table-responsive-lg : 화면크기 992px이상 ex) 992이상까진 화면을 유지하다가 992미만이 되면 스크롤바가 생김 -->
+            <!-- table-responsive-xl : 화면크기 1200px이상 -->
+            <div class="table-responsive-sm">
+                <table class="table table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th>이름</th>
+                            <th>포지션</th>
+                            <th>출신</th>
+                            <th>성별</th>
+                            <th>와드</th>
+                            <th>아이템1</th>
+                            <th>아이템2</th>
+                            <th>아이템3</th>
+                            <th>아이템4</th>
+                            <th>아이템5</th>
+                            <th>아이템6</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>문도 박사</td>
+                            <td>탱커</td>
+                            <td>자운</td>
+                            <td>남자</td>
+                            <td>와드</td>
+                            <td>망자의 갑옷</td>
+                            <td>태양불꽃 망토</td>
+                            <td>정령의 형상</td>
+                            <td>적응형 투구</td>
+                            <td>스테락의 도전</td>
+                            <td>얼어붙은 심장</td>
+                        </tr>
+                        <tr>
+                            <td>에코</td>
+                            <td>딜탱</td>
+                            <td>자운</td>
+                            <td>남자</td>
+                            <td>와드</td>
+                            <td>라바돈의 죽음모자</td>
+                            <td>공허의 지팡이</td>
+                            <td>존야의 모래시계</td>
+                            <td>영겁의 지팡이</td>
+                            <td>리안드리의 고통</td>
+                            <td>마법사의 신발</td>
+                        </tr>
+                        <tr>
+                            <td>징크스</td>
+                            <td>원딜</td>
+                            <td>필트오버</td>
+                            <td>여자</td>
+                            <td>와드</td>
+                            <td>스태틱의 단검</td>
+                            <td>무한의 대검</td>
+                            <td>루난의 허리케인</td>
+                            <td>도미닉경의 인사</td>
+                            <td>고속연사포</td>
+                            <td>피바라기</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+        </article>
+        <br><br><br><br>
+    </section>
+</body>
+</html>

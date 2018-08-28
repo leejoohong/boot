@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>부트스트랩의 alert</title>    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- jquery, popper, bootstrap 순 -->
+</head>
+<body>
+    <section class="container">
+        <!-- alertdms 부트스트랩에서 경고 메시지를 쉽게 출력할 수 있음 -->
+        <article>
+        <!-- 기본 alert 사용 -->
+        <!-- 부트스트랩의 기본 테마 색상을 사용함 -->
+            <div class="alert">
+                <strong>alert 박스 사용</strong> 
+            </div>
+            <hr>
+            <div class="alert alert-primary">
+                <strong>Primary!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-secondary">
+                <strong>Secondary!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-success">
+                <strong>Success!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-info">
+                <strong>Info!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-danger">
+                <strong>Danger!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-dark">
+                <strong>Dark!</strong> alert 박스 사용
+            </div>
+            <div class="alert alert-light">
+                <strong>Light!</strong> alert 박스 사용
+            </div>
+        </article> 
+        <br> <hr> <br>
+        <!-- 닫기 버튼이 있는 alert -->
+        <!-- 옵션으로 alert-dismissible을 사용하여 끝에 닫기 버튼을 추가함 -->
+        <!-- 닫기 버튼을 클릭하면 alert 영역이 사라짐 -->
+        <article>
+            <div class="alert alert-primary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Primary!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-secondary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Secondary!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Danger!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-light alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Light!</strong> 닫기 버튼이 있는 alert
+            </div>
+            <div class="alert alert-dark alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Dark!</strong> 닫기 버튼이 있는 alert
+            </div>
+        </article>
+        <!-- alert 영역안에 링크 사용하기 -->
+        <!-- a태그를 이용하여 alert 영역에 링크를 사용할 수 있음 -->
+        <!-- a태그를 사용시 class명을 alert-link로 써줘야한다 -->
+        <br><hr><br>
+        <article>
+            <div class="alert alert-primary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Primary!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-secondary alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Secondary!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert
+            </div>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Danger!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-light alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Light!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+            <div class="alert alert-dark alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Dark!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+            </div>
+        </article>
+        <br> <hr> <br>
+        <article>
+            <!-- 애니메이션효과가 추가된 alert -->
+            <!-- fade show 옵션을 사용하여 애니메이션을 추가 -->
+            <div class="alert alert-primary alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Primary!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-secondary alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Secondary!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert
+                </div>
+                <div class="alert alert-success alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Success!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-info alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Info!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-warning alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Warning!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Danger!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-light alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Light!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+                <div class="alert alert-dark alert-dismissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Dark!</strong> <a href="#" class="alert-link">닫기 버튼</a>이 있는 alert 
+                </div>
+        </article>
+    </section>
+    <br><br><br>
+</body>
+</html>
