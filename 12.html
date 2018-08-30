@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+    
+    <title>부트스트랩의 버튼그룹</title>
+</head>
+<body>
+    <section class="container">
+    <!-- 부트스트랩에서는 버튼을 한줄로 모아서 하나의 그룹화 하여 사용할 수 있음 -->
+    <!-- 네비게이션 버튼으로 사용가능  -->
+    <!-- div로 버튼들을 감싸고 div에 class로 btn-group을 준다 -->
+        <article>
+            <h4>버튼 그룹 사용하기</h4>
+            <div class="btn-group">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <!-- 찰싹 붙어놓아져서 있음 -->
+            <hr>
+            <h4>버튼 그룹이 아닌 div로 감싼 버튼</h4>
+            <div>
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            <!-- 띄워져서 나온다. -->
+            </div>
+        </article>
+        <hr>
+        <article>
+            <!-- 부트스츠랩의 버튼과 마찬가지로 큰 버튼구룹, 작은 버튼 그룹을 설정할 수 있음 -->
+            <!-- btn-group-sm, btn-group-lg -->
+            <h3>버튼 그룹의 크기 변경</h3>
+            <br>
+            <h4>작은 버튼 그룹</h4>
+            <div class="btn-group btn-group-sm">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <h4>기본 버튼 그룹</h4>
+            <div class="btn-group">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <h4>큰 버튼 그룹</h4>
+            <div class="btn-group btn-group-lg">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-sm">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+        </article>
+        <hr>
+        <article>
+            <!-- 세로 형태의 버튼 그룹은 btn-group에 옵션을 사용하지 않고 btn-group-vertical이라는 class명을 사용 -->
+            <h3>세로 정렬 형태의 버튼 그룹</h3>
+            <br>
+            <h4>작은 버튼 그룹</h4>
+            <div class="btn-group-vertical btn-group-sm">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <br>
+            <h4>기본 버튼그룹</h4>
+            <div class="btn-group-vertical">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <br>
+            <h4>큰 버튼그룹</h4>
+            <div class="btn-group-vertical btn-group-lg">
+                <button class="btn btn-primary">애플</button>
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+            </div>
+            <br><br>
+            <div class="btn-group-vertical btn-group-sm">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+                <div class="btn-group-vertical">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+                <div class="btn-group-vertical btn-group-lg">
+                    <button class="btn btn-primary">애플</button>
+                    <button class="btn btn-primary">삼성</button>
+                    <button class="btn btn-primary">LG</button>
+                </div>
+        </article>
+        <hr>
+        <article>
+            <h3>버튼 그룹안에 드롭다운 메뉴 사용</h3>
+            <!-- 버튼 그룹안에 버튼 그룹을 중복하면 드롭다운 메뉴를 사용할 수 있음 -->
+            <!-- 실제 드랍다운 버튼이 되는 부분 중 기존 부분은 버튼태그를 사용하며, 
+                그 아래 실제 드랍다운 메뉴가 되는 부분은 div에 class명을 dropdown-menu를 사용함 -->
+            <!-- dropdown-menu 아래에는 a태그에 class명을 dropdown-item을 입력하여 사용함 -->
+            <div class="btn-group">
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">LG</button>
+                
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">애플</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">테블릿</a>
+                        <a href="#" class="dropdown-item">스마트폰</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 실제로 위의 설명이 먹힌건 삼성 LG쪽 빼고 "div class=btn-group ~ item까지" -->
+        </article> <hr>
+        <article>
+            <h3>세로 형태의 드롭다운 버튼</h3>
+            <div class="btn-group-vertical">
+                <button class="btn btn-primary">삼성</button>
+                <button class="btn btn-primary">lg</button>
+
+                <!-- 안쪽의 btn-group 부분은 btn-group-vertical을 사용하지 않음 -->
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">애플</button>
+
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">테블릿</a>
+                        <a href="#" class="dropdown-item">스마트폰</a>
+                    </div>
+                </div>
+            </div>
+        </article> <hr>
+        <article>
+            <!-- 부트스트랩의 버튼 그룹은 인라인 레벨 태그로 설정되어 있어서 한줄에 여러개의 버튼 그룹을 사용할 수 있음 -->
+            <h3>버튼 그룹 연속으로 사용하기</h3>
+            <div class="btn-group">
+                <div class="btn-group">
+                    <button class=" btn-primary dropdown-toggle" data-toggle="dropdown">애플</button> 
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">테블릿</a>
+                        <a href="#" class="dropdown-item">스마트폰</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class=" btn-primary dropdown-toggle" data-toggle="dropdown">삼성</button> 
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">테블릿</a>
+                        <a href="#" class="dropdown-item">스마트폰</a>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class=" btn-primary dropdown-toggle" data-toggle="dropdown">LG</button> 
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">테블릿</a>
+                        <a href="#" class="dropdown-item">스마트폰</a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-danger">snony</button>
+                <button class="btn btn-danger">샤오미</button>
+                <button class="btn btn-danger">htc</button>
+            </div>
+        </article><hr>
+        <br><br><br>
+    
+    
+    
+    
+    
+    
+    </section>
+</body>
+</html>

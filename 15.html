@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>부트스트랩의 페이징 버튼</title>
+
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <!-- 부트스트랩에서 페이징은 미리 디자인된 버튼 그룹 형태로 미리 디자인 되어 있음 -->
+        <!-- ul과 li를 사용하여 페이징 버튼을 구현함 -->
+        <!-- ul의 class명에 pagination을 입력하여 사용하고 li와 a태그의 class명에 page-item, page-link를 입혁하여 사용 -->
+        <!-- 현재 활성화된 페이지를 표기할 경우 li의 class명에 active를 추가함-->
+        <!-- 비활성화할 페이지는 li의 class명에 disabled를 추가함 -->
+        <article>
+            <h3>페이징 버튼 사용하기</h3>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="" class="page-link">이전 페이지</a>
+                </li>
+                <li class="page-item active">
+                    <a href="" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">4</a>
+                </li>
+                <li class="page-item">
+                    <a href="" class="page-link">다음페이지</a>
+                </li>
+            </ul>
+        </article> <hr>
+        <article>
+            <!-- 페이징 버튼의 크기 설정 -->
+            <!-- ul의 class명에 pagination-sm, pagination-lg를 추가함 -->
+            <h3>페이지 크기 설정하기</h3>
+            <label for="">작은 페이지 버튼</label>
+            <ul class="pagination pagination-sm">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">이전</a>
+                </li>
+                <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">다음</a>
+                </li>
+            </ul>
+            <label for="">기본 페이지 버튼</label>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">이전</a>
+                </li>
+                <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">다음</a>
+                </li>
+            </ul>
+            <label for="">큰 페이지 버튼</label>
+            <ul class="pagination pagination-lg">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">이전</a>
+                </li>
+                <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">다음</a>
+                </li>
+            </ul>
+        </article> <hr>
+        <article style="width : 70%">
+            <!--페이징 버튼은 기본 설정이 좌측정렬임  -->
+            <!-- 페이징 버튼의 위치를 설정하기 위해서는 ul의 class명에 justify-content-center, justify-content-end -->
+            <!-- 해당 공간태그(span, div)의 크기에 따라서 위치가 조금씩 달라짐 -->
+            <h3>페이징 버튼 위치 설정</h3>
+            <label for="">좌측정렬(기본값)</label>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a href="#" class="page-link">이전</a>
+                </li>
+                <li class="page-item active">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">다음</a>
+                </li>
+            </ul>
+            <label for="">중앙정령</label>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">이전</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">다음</a>
+                    </li>
+                </ul>
+            <label for="">우측정렬</label>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a href="#" class="page-link">이전</a>
+                    </li>
+                    <li class="page-item active">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">다음</a>
+                    </li>
+                </ul>
+        </article> <hr>
+        <article>
+            <!-- breadcrumbs는 페이징 버튼이기는 하나 지정된 크기의 페이징 -->
+            <h3>단어로 된 페이징 버튼 breadcrumb</h3>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-link">사진</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-link">관심사</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumb-link">취미생활</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#" class="breadcrumbs-link">프로래밍공부</a>
+                </li>
+            </ul>
+        </article>
+    </section>
+    
+</body>
+</html>

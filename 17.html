@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>부트스트랩 리스트 그룹</title>
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- 사용자가 선택할 수 있는 선택지를 정해 줌 -->
+            <!-- 이미 선택된 형태로 표시할 경우 li의 class명에 active를 추가함 -->
+            <h3>리스트 그룹 사용하기</h3>
+            <ul class="list-group">
+                <li class="list-group-item active">선택된 아이템</li>
+                <li class="list-group-item">두번째 아이템</li>
+                <li class="list-group-item">세번째 아이템</li>
+            </ul>
+        </article> <hr>
+        <article>
+            <!-- li의 class명에 list-group-item-action을 추가하면 마우스 오버 효과가 추가 됨 -->
+            <!-- 선택할 수 없는 리스트를 원할 경우 disabled를 추가 -->
+            <h3>리스트 그룹에 마우스 오버 효과 사용</h3>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action">첫번째 아이템</li>
+                <li class="list-group-item list-group-item-action">두번째 아이템</li>
+                <li class="list-group-item list-group-item-action active">세번째 아이템(ative로 선택됨)</li>
+                <li class="list-group-item list-group-item-action disabled">네번째 아이템(disabled로 선택이 안됨)</li>
+            </ul>
+        </article> <hr>
+        <article>
+            <!-- 리스트 그룹에도 부트스트랩의 색상 테마를 사용할 수 있음 -->
+            <!-- list-group-item-primary, list-group-item-seceondary, list-group-item--success, list-group-item-info, list-group-item-warning,
+            list-group-item-danger, list-group-item-dark, list-group-item-light-->
+            <h3>리스트 그룹에 색상 테마 사용하기</h3>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary">primary</li>
+                <li class="list-group-item list-group-item-secondary">secondary</li>
+                <li class="list-group-item list-group-item-success">success</li>
+                <li class="list-group-item list-group-item-info">info</li>
+                <li class="list-group-item list-group-item-warning">warning</li>
+                <li class="list-group-item list-group-item-danger">danger</li>
+                <li class="list-group-item list-group-item-dark">dark</li>
+                <li class="list-group-item list-group-item-light">light</li>
+            </ul>
+        </article> <hr>
+        <article>
+            <h3>뱃지와 함께 사용하기</h3>
+            <ul class="list-group">
+                <!-- d-flex라는걸 주고 justify-content-between을 함으로써 첫번쨰는 왼쪽, 마지막은 오른쪽에 붙게함 -->
+                <li class="list-group-item d-flex justify-content-between align-items-center">받은 메일함 <span class="badge badge-primary">12</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">읽지 않은 메일 <span class="badge badge-primary">30</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">휴지통 <span class="badge badge-primary">100</span></li>
+            </ul>
+        </article>
+    </section>
+    <br><br><br><br>
+</body>
+</html>

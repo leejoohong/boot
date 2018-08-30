@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>쌤풀이</title>
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- 부트스트랩을 이용하여 간단한 게시판 UI를 만드세요 -->
+        <!-- 1. 테이블 생성시 번호, 제목, 글쓴이, 날짜, 조회, 추천 항목을 입력 -->
+        <!-- 2. 글의 수는 5개 내외 -->
+        <!-- 3. 게시글 제목 뒤에 댓글 수 입력(뱃지 사용) -->
+        <!-- 4. 게시판 아래에 목록, 글쓰기, 수정, 삭제, 뒤로 가기 추가(각기 다른 색상 사용) -->
+        <!-- 5. 버튼은 우측 아래쪽에 있어야 함-->
+        <header>
+            <h1 class="display-3 text-center">게시판 기본 UI 만들기</h1>
+            <br>
+        </header>
+        <main>
+            <section class="container">
+                <article class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md">
+                        <table class="table table-hover table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>글쓴이</th>
+                                    <th>날짜</th>
+                                    <th>조회</th>
+                                    <th>추천</th>
+                                </tr>
+                                </thead>
+                            <tbody>
+                                <tr class="text-info">
+                                    <td>공지</td>
+                                    <td>'캡틴 코리아' 역할 캐스팅 1순위 '근육남' 스타는?</td>
+                                    <td>운영자</td>
+                                    <td>2018/08/28</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>156848</td>
+                                    <td>[캐갤] 가을 <span class="badge badge-secondary">7</span></td>
+                                    <td>꽂자</td>
+                                    <td>2018.08.29	</td>
+                                    <td>498</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>156847</td>
+                                    <td>[캐갤] 여행중 찍은 사진 몇장 투척 (데이터주의) <span class="badge badge-secondary">9</span></td>
+                                    <td>ㅇㅇ</td>
+                                    <td>2018.08.29</td>
+                                    <td>500</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>156846</td>
+                                    <td>[등갤] 오늘자 노고단 운해+일출 <span class="badge badge-secondary">5</span></td>
+                                    <td>양과</td>
+                                    <td>2018.08.29</td>
+                                    <td>299</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>156845</td>
+                                    <td>[시갤] 한방이 필요하다... <span class="badge badge-secondary">35</span></td>
+                                    <td>Blk</td>
+                                    <td>2018.08.29</td>
+                                    <td>2337</td>
+                                    <td>17</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-2"></div>
+                </article>
+                <ul class="pagination justify-content-center">
+                    <li class="page-item active">
+                        <a href="" class="page-link">이전 페이지</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="" class="page-link">다음페이지</a>
+                    </li>
+                </ul>
+                <article class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="btn-group">
+                            <button class="btn btn-outline-info">목록</button>
+                            <button class="btn btn-outline-primary">글쓰기</button>
+                            <button class="btn btn-outline-warning">수정</button>
+                            <button class="btn btn-outline-danger">삭제</button>
+                            <button class="btn btn-outline-secondary">뒤로가기</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </article>
+            </section>
+        </main>
+        <footer>
+        <br>
+            <p class="text-center">2018 효성정보직업전문학교</p>
+        </footer>
+    </body>
+</html>

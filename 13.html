@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+
+    <title>부트스트랩의 뱃지</title>
+</head>
+<body>
+    <section class="container">
+        <!-- 부트스트랩의 뱃지는 모든 컨텐츠에 대한 추가 정보를 제공하는데 사용 됨 -->
+        <!-- span태그를 통하여 class명에 badge를 입력하여 사용함 -->
+        <!-- 부트스트랩의 테마 색상을 사용할 수 있음 -->
+        <!-- 카페에서 댓글갯수라던가 새글표시 등, 테이블하고 같이쓰면 좋을듯 -->
+        <article>
+            <h3>뱃지 사용하기</h3>
+            <h1>샘플 제목 <span class="badge badge-secondary">새글</span></h1>
+            <h2>샘플 제목 <span class="badge badge-secondary">새글</span></h2>
+            <h3>샘플 제목 <span class="badge badge-secondary">새글</span></h3>
+            <h4>샘플 제목 <span class="badge badge-secondary">새글</span></h4>
+            <h5>샘플 제목 <span class="badge badge-secondary">새글</span></h5>
+            <h6>샘플 제목 <span class="badge badge-secondary">새글</span></h6>
+        </article> <hr>
+        <article>
+            <!-- badge-primary, badge-secondary, badge-success, badge-info, badge-warning, badge-danger, badge-dark, badge-light -->
+            <h3>뱃지에 부트스트랩 색상 사용하기</h3>
+            <span class="badge badge-primary">primary</span>
+            <span class="badge badge-secondary">econdary</span>
+            <span class="badge badge-info">info</span>
+            <span class="badge badge-warning">warning</span>
+            <span class="badge badge-danger">danger</span>
+            <span class="badge badge-dark">dark</span>
+            <span class="badge badge-light">light</span>
+        </article> <hr>
+        <article>
+            <!-- 뱃지의 class명에 badge-pill을 추가하면 알약모양의 뱃지를 사용할 수 있음 -->
+            <h3>알약모양의 뱃지 사용하기</h3>
+            <span class="badge badge-primary badge-pill">primary</span>
+            <span class="badge badge-secondary badge-pill">econdary</span>
+            <span class="badge badge-info badge-pill">info</span>
+            <span class="badge badge-warning badge-pill">warning</span>
+            <span class="badge badge-danger badge-pill">danger</span>
+            <span class="badge badge-dark badge-pill">dark</span>
+            <span class="badge badge-light badge-pill">light</span>
+        </article> <hr>
+        <article>
+            <!-- 버튼 내부에 뱃지를 사용하여 추가적인 정보를 제공할 수 있음 -->
+            <!-- button 태그에 span 태그를 추가해서 사용 -->
+            <!-- span은 공간태그라서 이미지를 넣을 수도 있다. -->
+            <h3>버튼에 뱃지 사용하기</h3>
+            <button class="btn btn-primary">확인하지 않은 메시지 <span class="badge-light">5</span> </button>
+            <button class="btn btn-danger">확인하지 않은 경고 <span class="badge-warning">10</span> </button>
+            <button class="btn btn-dark">확인하지 않은 경고 <span class="badge-light"> <img src="../img/dot.png" alt=""></span></button>
+        </article>
+    </section>
+</body>
+</html>

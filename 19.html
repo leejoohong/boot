@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>내용 숨기기</title>    
+
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- 부트스랩에서 data-toggle속성을 이용하여 기능을 구현하고 data-target속성을 이용하여 기능이 구현될 대상을 선택 -->
+            <!-- data-toggle=collapse로 없애는 기능을 하고 data-target으로 어떤 대상인지 -->
+            <h3>컨텐츠 숨기기</h3>
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">숨기기 버튼</button>
+
+            <!-- collapse를 사용하면 기본적으로 숨김처리가 되어 있지만 class명에 show를 추가로 입력하면 처음부터 보이는 형태로 표시가 딤 -->
+            <!-- show를 안하면 로딩시 클릭을 해야지 항목이 보이지만 show를 하면 로딩시 부터 숨겨지지 않은 부분으로 나옴, 클릭하면 숨겨짐 -->
+            <div id="demo" class="collapse show">
+                <p>아무글이나 막막 넣어주세요</p>
+                <p>2번쨰 줄도 그냥 막막 넣어주세여</p>
+                <p>3세째두 걍 넣어요</p>
+            </div>
+            <h2>제목 그냥 아무거나</h2>
+        </article>
+        <article>
+            <!-- accordion은 collapse와 card를 사용하여 여러개의 항목 중 하나의 항목의 내용이 출력되고, 다른 항목을 선택시 기존의 항목은 숨기고 선택한 항목을 출력하는 기능 -->
+            <h3>collapse기능을 확장한 accordion 사용하기</h3>
+            <!-- 카드는 세개준거고 각 카드는 헤더와 바디로 이루어짐 그런데 이 바디를 숨김 -->
+            <div id="accordion">
+
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#colone" class="card-link" data-toggle="collapse">첫번째 아이템</a>
+                        <!-- 누르면 id=colone으로 가라 -->
+                    </div>
+                    <div id="colone" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>첫번째 아이템의 내용</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#coltwo" class="card-link" data-toggle="collapse">두번째 아이템</a>
+                    </div>
+                    <div id="coltwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>두번째 아이템 내용</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a href="#colthree" class="card-link" data-toggle="collapse">세번째 아이템</a>
+                    </div>
+                    <div id="colthree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>세번째 아이템 내용</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </section>
+</body>
+</html>

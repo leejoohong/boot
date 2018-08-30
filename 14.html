@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>부트스트랩의 프로그레스바</title>
+    <style>
+    body{background-color: lemonchiffon;}
+    </style>
+</head>
+<body>
+    <h3>기본 아이콘</h3>
+    <i class="fa fa-cloud"></i>
+    <i class="fa fa-heart"></i>
+    <i class="fa fa-car"></i>
+    <i class="fa fa-file"></i>
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-circle"></i>
+    <i class="fa fa-diamond"></i>
+    <i class="fa fa-money"></i>
+
+    <section class="container">
+        <!-- 부트스트랩에서 미리 디자인된 프로그래스바를 제공 -->
+        <!-- 각종 진행 상황을 사용자가 한눈에 알아 볼 수 있도록 해줌 -->
+        <!-- div 태그를 사용하며 class명에 progress-bar를 입력하여 사용함 -->
+        <!-- css의 width를 이용하여 현재 프로그레스바의 진행율을 표시함(%값으로 입력) -->
+        <!-- div하나에  class에 progress를 만들고 그 안에 div를 넣고 class를 progress-bar를 주고 style에 width : %;로준다  -->
+        <article>
+            <h3>프로그레스바 사용하기</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width : 80%;">
+                </div>
+            </div>  
+        </article>
+
+        <article>
+            <!-- 부모 태그와 자식 태그의 css 스타일 중 height 속성을 이용하여 프로그레스바의 굵기를 설정 -->
+            <h3>프로그레스바 굵기 지정하기</h3>
+            <h4>얇은 프로그레스바</h4>
+                <div class="progress" style="height : 8px;">
+                    <div class="progress-bar" style="width : 30%; height: 8px;">
+                    </div>
+                </div>
+            <h4>기본 프로그레스바</h4>
+                <div class="progress" style="height : 16px;">
+                    <div class="progress-bar" style="width : 50%; height: 16px;">
+                    </div>
+                </div>
+            <h4>굵은 프로그레스바</h4>
+                <div class="progress" style="height : 24px;">
+                    <div class="progress-bar" style="width : 70%; height: 24px;">
+                    </div>
+                </div>
+        </article> <hr>
+        <article>
+            <!-- 프로그레스바도 부트스트랩 테마 색상을 사용가능함 -->
+            <!-- 기본 색상은 파랑색임 -->
+            <!-- bg-primary, bg-secondary, bg-success, bg-info, bg-warning, bg-danger, bg-dark, bg-light-->
+            <h3>부트스트랩 테마 색상 사용하기</h3>
+                 <div class="progress">
+                    <div class="progress-bar" style="width : 10%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-primary" style="width : 20%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-secondary" style="width : 30%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar  bg-success" style="width : 40%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-info" style="width : 50%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width : 60%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" style="width : 70%">
+                    </div>
+                </div><br>
+                <div class="progress bg-primary">
+                    <div class="progress-bar bg-white" style="width : 80%">
+                    </div>
+                </div><br>
+                <div class="progress bg-primary">
+                    <div class="progress-bar bg-light" style="width : 90%">
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar bg-dark" style="width : 100%">
+                    </div>
+                </div><br>
+        </article> <hr>
+        <article>
+            <!-- progress의 자식 태그에 옵션을 추가하여 빗살무늬가 있는 프로그레스바를 출력함 -->
+            <!-- progress-bar-striped 클래스를 추가함 -->
+            <h3>빗살 무늬가 있는 프로그레스 바</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" style="width : 30%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" style="width : 40%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" style="width : 50%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning" style="width : 60%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" style="width : 70%;">
+                </div>
+            </div>
+        </article><hr>
+        <article>
+            <!-- progress-bar에 옵션으로 progress-bar-animated를 추가하여 애니메이션 기능이 있는 프로그레스바를 출력 -->
+            <h3>애니메이션기능이 있는 프로그레스바(striped준게 움직임)</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width : 30%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width : 40%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width : 50%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width : 60%;">
+                </div>
+            </div><br>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width : 70%;">
+                </div>
+            </div>
+        </article><hr>
+        <article>
+            <!-- 자식태그인 progress-bar의 시작태그와 끝 태그 사이에 진행율을 표시하면 된다. -->
+            <h3>프로그레스 바에 진행율 표시하기</h3>
+            <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width : 30%;">
+                    데이터 복사 중 30%
+                    </div>
+                </div><br>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width : 40%;">
+                    데이터 복사 중 40%
+                    </div>
+                </div><br>
+        </article><hr>
+        <article>
+            <!-- 부모태그인 progress에 자식 태그인 progress-bar를 여러개 입력하여 출력 -->
+            <h3>하나의 프로그레스바에 여러개의 데이터 출력하기</h3>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width : 20%">빈공간</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width : 30%">경고</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width : 20%">위험</div>
+            </div>
+        </article>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
