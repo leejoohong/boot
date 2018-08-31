@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>부트스트랩의 Form 사용</title>
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- 부트스트랩에서 form은 자식 태그로 div를 사용하여 label과 input태그를 묶어서 사용함 -->
+            <!-- 그리고 그 div 태그의 class명에 form-group을 입력하여 하나로 묶음 -->
+            <!-- input태그의 class명에 form-control을 입력하여 사용 -->
+            <!-- 하나의 input 태그는 블록 레벨 태그로 인식하여 화면 한라인 전체에 입력 창을 표시함 -->
+            <!-- 그래서 grid시스템으로 너비를 설정 -->
+            <h3>부트스트랩의 기본형 Form 사용</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="userid">User ID :</label>
+                    <input type="text" class="form-control" id="userid" name="userid" placeholder="ID를 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label for="userpassword">User Password</label>
+                    <input type="text" class="form-control" name="userpassword" id="userpassword" placeholder="비밀번호를 입력하세요">
+                </div>
+                <div class="form-group">
+                    <label class="form-chek-label">
+                        <input type="checkbox" class="form-chek-input"> 기억하기
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article> <hr>
+        <article>
+            <h3>한 라인에 여러개의 입력폼 사용하기</h3>
+            <form action="" class="form-inline" role="form">
+                <label for="userid01">User ID : &nbsp; </label>
+                <input type="text" class="form-control mr-2" id="userid01" placeholder="아이디를 입력하세요.">
+                <label for="userpassword01">User Password : &nbsp; </label>
+                <input type="password" id="userpassword01" class="form-control mr-2" placeholder="비밀번호를 입력하세요">
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>부트스트랩의 네비게이션 바</title>
+</head>
+<body>
+    <section class="container">
+        <!-- 네비게이션바는 주로 페이지 상단에 위치하는 탐색 메뉴를 모아둔 영역 -->
+        <!-- html5로 넘어오면서 nav태그의 추가되고 있으며, 부트스트랩에서 ul태그를 통해서 탐색 메뉴를 추가함 -->
+        <!-- 탐색 메뉴와 같이 드랍 다운 버튼을 사용할 수 있으며, 추가로 텍스트 박스도 사용이 가능함 -->
+        <!-- nav 태그에 class명으로 navbar를 입력하여 사용하고,옵션으로navbar-expand-xl|lg|md|sm을 사용하여 크기조절 가능 -->
+        <!-- 부트스트랩 테마 색상을 사용할 수 있음 -->
+        <!-- bg-primary, bg-secondary, bg-success, bg-info, bf-warning, bg-danger, bg-dark, bg-light가 있다. -->
+        <!-- navbar-dark , navbar-light를 통해 네비게이션바 내부의 색 변경 옵션도 있음 -->
+        <!-- 오히려 navbar-dark는 회색이고, navbar-light가 검은색 비스무리하게 나옴 -->
+        <article>
+            <h3>기본 네비게이션바 사용</h3>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크3</a>
+                    </li>
+                </ul>
+            </nav>
+        </article> <hr>
+        <article>
+            <!-- nav태그의 class명에서 navbar-expand를 삭제하면 세로형 네비게이션바를 사용할 수 있음 -->
+            <h3>세로형 네비게이션바 사용</h3>
+            <nav class="navbar bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크3</a>
+                    </li>
+                </ul>
+            </nav>
+        </article> <hr>
+        <article>
+            <!-- div기 떄문에 한줄을 전체다 차지한다. 영역을 grid를 이용하거나 style="width :"로 줄이면 된다. -->
+            <h3>grid 시스템을 사용하여 사이드바에 넣은 네비게이션 바</h3>
+            <div class="row">
+                <div class="col-md-2">
+                    <nav class="navbar bg-dark navbar-dark">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">세로 링크1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">세로 링크2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">세로 링크3</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-10 bg-secondary">
+                    <h4 class="text-center mt-5 py-1">메인 컨텐츠 영역</h4>
+                    <!-- mt는 마진탑을 준거고 5까지 밖에 없다. py는 패딩 -->
+                </div>
+            </div> 
+        </article><hr>
+        <article>
+            <!-- 네비게이션 바(항목)의 위치정렬은 nav태그에 justify-content-start(혹은 안쓰면 기본값인 왼쪽), 
+                justify-content-center, justify-content-end로 쓸 수 있다. -->
+            <h3>네비게이션 바(항목) 위치 정렬</h3>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-start">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크3</a>                        
+                    </li>
+                </ul>
+            </nav>
+        </article><hr>
+        <article>
+            <h3>네비게이션바 로고(브랜드) 사용</h3>
+            <!-- a태그를 이용하여 간단한 텍스트나 이미지를 사용하여 브랜드, 로고, 프로젝트 이름을 입력하고 웹 사이트의 첫페이지로 이동하는 역할을 함 -->
+            <!-- a태그의 class명에 navbar-brand를 입력하여 사용 -->
+            <h4>글자넣기</h4>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">Logo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <h4>이미지 넣기</h4>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#" class="navbar-band"><img src="../img/tomato.jpg" alt="" style="width: 45px;"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+                </nav>
+        </article><hr>
+        <article>
+            <!-- 작은 화면에서도 정상적으로 메뉴를 표시하기 위해서 cllapse 기능을 사용하여 메뉴 버튼을 숨김 -->
+            <!-- 메뉴를 접었다 폈다하기 위한 버튼을 추가하고 class명을 navbar-toggler을 사용함 -->
+            <!-- data-target 속성으로 ul을 감싸고 있는 div의 id값을 지정함 -->
+            <!-- ul을 감싸고 있는 div는 class명을 collapse navbar-collapse를 사용하여 네비게이션바 전용 접기 기능을 사용함 -->
+           <h3>화면의 크기가 작아지면 메뉴를 접기</h3>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+                <a href="#" class="navbar-brand">Logo</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#colnavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- 버튼에 의해 영역이 사라졌나 나왔다 해야하게 떄문에 div로 감싸준다 -->
+                <div class="collapse navbar-collapse" id="colnavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </article><hr>
+        <article>
+            <h3>네비게이션 바에 드랍다운 메뉴 넣기</h3>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+                <a href="#" class="navbar-brand">Logo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">링크 3</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">드랍다운 링크1</a>
+                            <a href="#" class="dropdown-item">드랍다운 링크2</a>
+                            <a href="#" class="dropdown-item">드랍다운 링크3</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </article><hr>
+        <article>
+            <!-- form태그를 사용하여 네비게이션 바에 사용자 입력 태그를 추가함 -->
+            <h3>네비게이션바에 입력창 넣기</h3>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search...">
+                    <!-- mr(margin right) sm은 small로 크기가 576px이하일 떄 변경되는거 뒤에 2는 그 숫자에 따라 몇 px인가 숫자당 미리정해놓은 규격이 있다. -->
+                    <button class="btn btn-success" type="submit">검색</button>
+                </form>
+            </nav>
+                <br>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <form action="" class="form-inline">
+                    <input type="text" class="form-control mr-sm-2" placeholder="ID">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Password">
+                    <button class="btn btn-success" type="submit">검색</button>
+                </form>
+            </nav> 
+            <br>
+            <!-- 캡션하고 입력창 같이보기 -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <form action="" class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email..">
+                    </div>
+                </form>
+            </nav>
+        </article><hr>
+        <article>
+            <h3></h3>
+        </article><hr>
+        <article>
+            <!-- 공간태그인 span을 추가하고 class 명으로 navbar-text를 입력하면 일반 텍스트를 넣을 수 있는 공간을 생성함 -->
+            <h3>네비게이션 바에 텍스트 넣기</h3>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">Logo</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크3</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">글자를 넣어요..</span>
+                <!-- 글자를 넣기위한 특별한 태그가 추가된거 -->
+            </nav>
+        </article> <hr>
+        <article>
+            <!-- nav태그의 class에 fixed-top, fixed-bottom을 추가하여 화면 
+                상단 혹은 화면 하단에 네비게이션바를 고정하여 스크롤의 이동이 있어도 
+                항상 같은 위치에 네비게이션바를 표시함  -->
+            <h3>화면에 고정된 네비게이션 바</h3>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-bottom">
+                <a href="" class="navbar-brand">Logo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 3</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container bg-warning" style="margin-top:50px;">
+                <h4>화면에 고정된 네비게이션바 확인</h4>
+                <p>화면에 어떻게 고정될지 확인해 봅시다.</p>
+            </div>
+        </article><hr>
+        <article>
+            <div class="container-fluid">
+                <br>
+                <h3>화면 밑에 있다가 스크롤이 올라가면 상단에 붙는 네비게이션 바</h3>
+                <p>기본 위치는 제일 상단이 아닌 중간쯤에 네비게이션 바가 있음</p>
+                <p>스크롤의 움직임에 따라 화면 상단에 네비게이션바가 위차하게 되면 화면에 고정되어 나타나는 네비게이션 바</p>
+            </div>
+            <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+                <a href="" class="navbar-brand">Logo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">링크 1</a>
+                    </li>
+                </ul>
+            </nav>       
+            
+            <div class="container-fluid">
+                <br>
+                <p>아무소리나</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br>
+                <p>아이스크림</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>끝</p>
+                <!-- 스크롤을 내려서 바가 상단 화면에 붙으면 상단에 고정됨, 다시 스크롤을 올리면 바가 원래 위치에 옴 -->
+            </div>
+        </article>
+    </section>
+</body>
+</html>

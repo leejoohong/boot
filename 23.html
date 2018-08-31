@@ -1,0 +1,175 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>부트스트랩 form에서 사용되는 것들</title>
+</head>
+<body>
+    <section class="container">
+        <article>
+            <h3>부트스트랩 textarea 사용하기</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="comment">글쓰기 : </label>
+                    <textarea class="form-control" name="text" id="comment" cols="30" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article><hr>
+        <article>
+            <h3>부트스트랩 방식의 checkbox 사용하기</h3>
+            <form action="">
+                <div class="form-check">
+                    <label class="form-check-label" for="check01">
+                        <input type="checkbox" class="form-check-input" id="check01" name="option01" value="option-01" checked>Option 1 
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="check02">
+                        <input type="checkbox" class="form-check-input" id="check02" name="option02" value="optiion-02">Option 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="check03">
+                        <input type="checkbox" class="form-check-input" id="check02" name="option03" value="optiion-03" disabled>Option 3
+                    </label>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article><hr>
+        <article>
+            <!-- 체크박스를 사용할 경우 div의 class명에 form-check대신 form-check-inlin를 사용 -->
+            <h3>부트스트랩 방식의 checkbox를 인라인 태그로 사용하기</h3>
+            <form action="">
+                <div class="form-check-inline">
+                    <label for="check04" class="form-check-label">
+                        <input type="checkbox" class="form-check-input" name="check04" id="check04" value="1" checked>Option 1
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label for="check05" class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="check05" name="check05" value="2">Option 2
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label for="check06" class="form-check-label" id="check06">
+                        <input type="checkbox" class="form-check-input" id="check06" name="check06" value="3" disabled>Option 3
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article><hr>
+        <article>
+            <h3>라디오 박스 사용하기</h3>
+            <form action="test.php" method="GET">
+                <div class="form-check">
+                    <label for="radio01" class="form-check-label">
+                        <input class="form-check-input" type="radio" name="optradio01" id="radio01" value="한국" checked>option 1
+                    </label>
+                </div>
+                <div class="form-check"> 
+                    <label for="radio02" class="form-check-label">
+                        <input class="form-check-input" type="radio" name="optradio01" id="radio02" value="일본">option 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="radio03" class="form-check-label">
+                        <input class="form-check-input" type="radio" name="optradio01" id="radio03" value="3" disabled>option 3
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+                <!-- checkbox나 radiobox에서 value는 서버로 보낼때 체크된 부분이 value값으로 보여지는거 -->
+            </form> <br>
+            <form action="">
+                <div class="form-check-inline">
+                    <label for="radio04" class="form-check-label">
+                        <input type="radio" class="form-check-input"  id="radio05" name="optradio02" value="4">Option4
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label for="radio06" class="form-check-label">
+                        <input type="radio" class="form-check-input"  id="radio06" name="optradio02" value="5" checked>Option5
+                    </label>
+                </div>
+                <div class="form-check-inline">
+                    <label for="radio07" class="form-check-label">
+                        <input type="radio" class="form-check-input" id="radio07" name="optradio02" value="6">Option6
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article> <hr>
+        <article>
+            <!-- html 태그의 select와 option을 이용하여 부트스트랩의 디자인을 적용한 select list -->
+            <h3>selcet list 사용하기</h3>
+            <form action="">
+            <div class="form-group">
+                <label for="sel01">selcet list(one): </label>
+                <select name="sel01" id="sel01" class="form-control">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+                <br>
+                <label for="sel02">select list(Multi): </label>
+                <select name="sel02" id="sel02" class="form-control" multiple>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">전송</button>
+            </form>
+        </article><hr>
+        <article>
+            <!-- class명에 sm, lg를 추가하여 form-control-sm, form-contrio-lg로 폼의 크기를 설정함 -->
+            <h3>폼 컨트롤 크기설정</h3>
+            <form action="">
+                <div class="form-group">
+                    <label for="text01">작은폼 : </label>
+                    <input type="text" class="form-control form-control-sm" id="text01" name="tex01" placeholder="작은폼에 글자를 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="text02">기본폼 : </label>
+                    <input type="text" class="form-control form-control-sm" id="text02" name="tex02" placeholder="폼에 글자를 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="text03">큰폼 : </label>
+                    <input type="text" class="form-control form-control-lg" id="text03" name="tex03" placeholder="큰폼에 글자를 입력해주세요">
+                </div>
+                <button class="btn btn-primary" type="submit">전송</button>
+            </form>
+        </article> <hr>
+        <article>
+            <h3>슬라이드바 사용</h3>
+        <form action="">
+            <div class="form-group">
+                <input type="range" class="form-control-range" name="range">
+            </div>
+        </form>
+        </article><hr>
+        <article>
+            <h3>파일 선택하기</h3>
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <input type="file" class="form-control-file" name="file">
+                </div>
+                <button type="submit" class="btn btn-primary">전송</button>
+            </form>
+        </article><hr>
+    </section>
+</body>
+</html>
