@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩의 툴팁과 팝오버</title>
+   
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+<body>
+   <section class="container">
+        <article>
+            <!-- 툴팁은 사용자가 마우스 포인터를 특정 태그 위로 이동했을 경우 나타나는 작은 팝업창 -->
+            <!-- html 태그에 data-toggle 속성을 tooltip으로 설정하여 사용  -->
+            <!-- title 속성을 사용하여 필요한 텍스트를 입력함 -->
+            <!-- 부트스트랩의 tooltip 기능은 jQuery를 이용하여 tooltip()함수를 실행시켜야 함 -->
+            <h3>툴팁사용하기</h3>
+            <a href="#" data-toggle="tooltip" title="툴팁사용하기..">마우스를 올려보아요</a>
+        </article><hr>
+        <article>
+            <!-- data-placement 속성을 사용하여 툴팁이 표시되는 방향을 설정할 수 있음 -->
+            <!-- data-plcement 속성값은 top, bottom, left, right -->
+            <h3>툴팁 표시 방향 지정하기</h3>
+            <a href="#" data-toggle="tooltip" title="상단 출력" data-placement="top">Top</a>
+            <a href="#" data-toggle="tooltip" title="하단 출력" data-placement="bottom">Bottom</a>
+            <a href="#" data-toggle="tooltip" title="좌측 출력" data-placement="left">Left</a>
+            <a href="#" data-toggle="tooltip" title="우측 출력" data-placement="right">Right</a>
+        </article>
+   </section> <hr>
+   <section class="container">
+        <article>
+            <!-- 팝오버는 기본적으로 툴팁과 비슷하지만 사용자가 마우스로 클릭할 때 동작하는 팝업상자임 -->
+            <!-- 팝오버가 더 많은 정보를 포함 할 수 있다. -->
+            <!-- 해당 html의 속성으로 data-toggle을 popover로 입력되어야 사용가능 함-->
+            <!-- title은 표시되는 팝오버의 제목 -->
+            <!-- data-content가 실제 화면에 표시될 내용 -->
+            <h3>팝오버 사용하기</h3>
+            <a href="#" data-toggle="popover" title="팝오버 제목" data-content="아무런 컨텐츠나 입력하세요">마우스로 눌러보세요.</a>
+        </article><hr>
+        <article>
+            <h3>팝오버 표시 방향 지정하기</h3>
+            <!-- html5의 속성으로 data-toggle이 popover로 입력되어야 사용가능함  -->
+            <!-- data-placement를 추가하면 상단(top) 하단(bottom)좌측 (left) 우측(right) 방향으로 popover가 표시된다-->
+            <a href="#" data-toggle="popover" title="상단 제목" data-placement="top" data-content="상단출력">Top</a>
+            <a href="#" data-toggle="popover" title="하단 제목" data-placement="bottom" data-content="하단출력">Bottom</a>
+            <a href="#" data-toggle="popover" title="좌측 제목" data-placement="left" data-content="좌측출력">Left</a>
+            <a href="#" data-toggle="popover" title="우측 제목" data-placement="right" data-content="우측출력">Right</a>
+        </article>
+   </section>
+</body>
+</html>

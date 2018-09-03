@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩의 input-group</title>
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- input-group은 텍스트박스나 라디오 박스, 버튼, 아이콘 등의 
+                각종 입력 태그의 앞이나 뒤에 간단한 설명을 추가하기 위해 사용하는 컨테이너-->
+            
+                <!-- input-group을 사용하게 되면 텍스트 박스에 label부분이 합해져서 표시-->
+            
+            <!-- class명에 input-group 인 div 태그의 자손태그 중 class명이 input-group-prepend인 div는 
+                input태그 보다 먼저 입력이 되어야하며, 결과물은 input 태그의 앞쪽에 label 부분이 합쳐지 형태 -->
+
+            <!--class명이 input-group인 div태그의 자손 태그 중 class 명이 input-group-appenddls div는
+                input태그 뒤에 입력되어야 하며, 결과물은 input태그의 뒤쪽에 label이 합쳐지 형태  -->
+
+            <!--그리고 실제 label 부분에 입력될 영역은 span으로 입력하고 class는 input-group-text로 입력한다.  -->
+
+            <h3>input-group사용하기</h3>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="user" name="user" placeholder="사용자 ID">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="사용자 Email">
+                    <div class="input-group-append">
+                        <span class="input-group-text">@example.com</span>
+                    </div>                  
+                </div>
+                <button class="btn btn-primary" type="submit">확인</button>
+            </form>
+        </article><hr>
+        <article>
+            <!-- input-group의 크기설정은 작은 크기,기본, 큰 크기 이렇게 3개로 나눠진다.. -->
+            <!-- 가장 외부에 있는 input-group에 input-group-sm, input-group-lg를 입력한다. -->
+            <h3>input-group의 크기 설정</h3>
+            <form action="">
+                <div class="input-group mb-3 input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">작음</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="작은 크기의 prepend 인풋 그룹">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">기본</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="기본 크기의 prepend 인풋 그룹">
+                </div>
+
+                <div class="input-group mb-3 input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">큼</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="큰 크기의 prepend 인풋 그룹">
+                </div>
+
+                <div class="input-group mb-3 input-group-sm">
+                    <input type="text" class="form-control" placeholder="작은 크기의 append 인풋 그룹">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-dark text-light">작음</span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="기본 크기의 append 인풋 그룹">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-success text-light">기본</span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3 input-group-lg">
+                    <input type="text" class="form-control" placeholder="큰 크기의 append 인풋그룹">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-primary text-light">큼</span>
+                    </div>
+                </div>
+            </form>
+        </article><hr>
+        <article>
+            <!-- input-group 안의 input 태그나 label 부분이 될 input-group-text 부분을 
+                여러개 입력하여 하나의 input 태그에 여러개의 textbox나 label 출력  -->
+                <!-- input을 여러개 쓰면 텍스트 박스가 여러개 생기는 격이다. -->
+                <!-- span을 여러개 쓰면 label이 여러개 써지는 격이고 -->
+                
+            <h3>하나의 input-group에 label이나 textbox 여러개 넣기</h3>
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">이름</span>
+                    </div>
+                        <input type="text" class="form-control" placeholder="성">
+                        <input type="text" class="form-control" placeholder="이름">
+                </div>
+                
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">one</span>
+                        <span class="input-group-text">two</span>
+                        <span class="input-group-text">three</span>   
+                    </div>
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                </div>
+            </form>
+        </article><hr>
+        <article>
+            <!--class명 input-group-text를 span태그가 아니라 div태그가 class명으로 사용하고 
+                그 후손태그로 input태그의 checkbox를 사용하면 input-group의 label 부분이 checkbox(radiobox)형식으로 변경된다  -->
+            <h3>input-group-text 대신 checkbox, radiobox의 사용</h3>
+            <form action="">            
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox">체크박스
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio">라디오박스
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                </div>
+            </form>
+        </article><hr>
+        <article>
+            <!-- input-group-text가 들어갈 위치에 button을 넣으면 label 부분에 button이 추간된다. -->
+            <!-- input-group-prepend, input-group-append 둘 다 사용이 가능함 -->
+            <!-- 여러개의 button을 입력하면 하나의 라인에 다중 버튼이 생성됨 -->
+
+            <h3>input-group의 button사용하기</h3>
+            
+            <form action="">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button type="submit" class="btn btn-outline-primary">기본버튼</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                    <div class="input-group-append">
+                        <button class="btn btn-success">검색</button>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="글자를 입력하세요">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">확인</button>
+                        <button class="btn btn-danger">취소</button>
+                    </div>
+                </div>
+            </form>
+        </article><hr>
+        <article>
+            <!-- input-group에서 버튼 사용하기와 동일한 방식으로 드랍 다운 버튼을 input-group에서 사용 -->
+            <h3>input-group에서 dropdown button사용</h3>
+            <form action="">
+                <div class="input-group mt-3 mb-3">
+                    <div class="input-group-prepend">
+                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">드랍다운 버튼</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">링크1</a>
+                            <a class="dropdown-item" href="#">링크2</a>
+                            <a class="dropdown-item" href="#">링크3</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control text-center" placeholder="글자를 입력하세요">
+                </div>
+            </form>
+        </article><hr>
+    </section>
+</body>
+</html>

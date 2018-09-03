@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩의 모달창</title>
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="container">
+        <article>
+            <!-- 모달창이란 팝업 대화창을 말함-->
+            <!-- 모달창은 팝업창과 동일한 형태를 하고있지만 부모창이 열렸을 경우 모달창이 닫히기 전까진
+            부모창에서의 작업이 불가능한 형태의 팝업창을 말함 -->
+
+            <!-- 모달창은 실제 팝업창이 뜬 것이 아니기 때문에 해당 페이지에 모달창 영역을 div로 사용함 -->
+            
+            <!-- 모달창을 열기 위하여 모달창 영역을 설정하고 버튼에 data-toggle속성을 modal로 설정하고,
+                모달창 대상 영역을 data-target 속성으로 설정하여 그 대상을 불러옴 -->
+            
+            <!-- 모달창은 div 태그의 class명을 modal로 입력하여 상요하고 자식 태그로 modal-dialog를 사용하는 div를 입력한다 -->
+            <!-- 그후 modal-dialog안에 div태그로 class를 가지는 modal-content를 주고 그 안에 modal-header, body, footer를 주는 div를 준다 -->
+            <!-- 애니메이션을 사용하려면 modal 클래스에 fade를 추가함(modal fade) -->
+
+            <h3>모달창 만들기</h3>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">모달창 열기</button>
+                <!-- datat-toggle=modal > 모달형식으로 data-target=#myModal > myModal id 영역을 연다 -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">모달창 제목</h4>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>모달창 컨텐츠 영역</p>
+                            <p>필요한 태그를 입력하면 됨</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </article><hr>
+        <article>
+            <!-- modal 클래스의 자식 태그인 modal-dialog에 modal-sm, modal-lg를 추가하면 모달창의 크기를 작게 또는 크게 만들 수 있다. -->
+            <h3>모달창 크기 설정하기</h3>
+
+    
+            <button class="btn btn-success" data-toggle="modal" data-target="#myModal01">작은 모달창</button>
+            <div class="modal fade" id="myModal01">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">작은 모달창 제목</h4>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>작은 모달창 입니다.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal02">기본 모달창</button>
+            <div class="modal fade" id="myModal02">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">기본 모달창 제목</h4>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>기본 모달창 입니다.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <button class="btn btn-info" data-toggle="modal" data-target="#myModal03">큰 모달창</button>
+            <div class="modal fade" id="myModal03">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">큰 모달창 제목</h4>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>큰 모달창 입니다.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </article><hr>
+        <article>
+            <!--modal-dialog 클래스에 modal-dialog-centered를 추가하면 화면 중간에 나타남  -->
+            <h3>화면 중간에 나타나는 모달창</h3>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal04">화면 중간 출력 모달창</button>
+            <div class="modal fade" id="myModal04">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">화면 가운데 출력되는 모달창 제목</h4>
+                            <button class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>화면 가운데 출력되는 모달창</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article><hr>
+    </section>
+</body>
+</html>
