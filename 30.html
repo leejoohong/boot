@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩의 유틸리티</title>
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .border{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+       /* span자체가 inline-level-tag라서 border의 width와 height등을 먹일려면 inline-block을 준 것 */
+        .roundeds  span{
+            display: inline-block;
+            widows: 100px;
+            height: 100px;
+            margin: 6px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header class="jumbotron text-center text-dark">
+        <h1>부트스트랩 유틸리티</h1>
+    </header>
+    <!-- 부트스트랩 유틸리티는 html 태그를 css로 디자인한 형태의 것이 아니라
+        각종 태그를 조금 더 꾸며주는 효과를 주는 요소 -->
+    <section class="container" >
+        <article>
+            <!-- div나 span과 같은 공간 태그에 border를 사용하면 테두리 선이 생김 -->
+            <!-- border-0을 사용하면 테두리 부분을 삭제할 수 있음 
+            border-top, border-right, border-bottom, border-left등 의 뒤에 0을 추가하면
+            해당 부분의 border를 삭제 할 수 있음 -->
+            <h3>border 기능</h3>
+            <span class="border">border</span>
+            <span class="border border-0">border-0</span>
+            <span class="border border-top-0">border-top-0</span>
+            <span class="border border-right-0">border-right-0</span>
+            <span class="border border-bottom-0">border-bottom-0</span>
+            <span class="border border-left-0">border-left-0</span>
+        </article><br>
+        <article>
+            <!-- 부트스트랩의 테마색상은 border-테마명 추가 입력 -->
+            <!-- border-primary, border-secondary, border-success, border-info, border-warning, border-danger, border-dark, border-light, border-white -->
+            <h3>border에 부트스트랩 테마 색상 사용</h3>
+            <span class="border border-primary"></span>
+            <span class="border border-secondary"></span>
+            <span class="border border-success"></span>
+            <span class="border border-info"></span>
+            <span class="border border-warning"></span>
+            <span class="border border-danger"></span>
+            <span class="border border-dark"></span>
+            <span class="border border-light"></span>
+            <span class="border border-white"></span>
+        </article><hr>
+        <article class="roundeds">
+            <!-- html 태그에 사용하여 모서리 부분을 둥근 모서리로 변경 -->
+            <!-- rounded 클래스명을 사용하고 옵션으로
+            rounded-top, rounded-right, rounded-bottom,rounded-left, rounded-circle, rounded-0이 있음 -->
+            <h3>border에 둥근 모서리 추가하기</h3>
+            <span class="border border-dark rounded"></span>
+            <span class="border border-dark rounded-top"></span>
+            <span class="border border-dark rounded-right"></span>
+            <span class="border border-dark rounded-bottom"></span>
+            <span class="border border-dark rounded-left"></span>
+            <span class="border border-dark rounded-circle"></span>
+            <span class="border border-dark rounder-0"></span>
+        </article><hr>
+        <article>
+            <!-- 부트스트랩에서 float을 사용할 경우 클래스 명에 float-left, float-right를 추가함 -->
+            <!-- float이 적용된 것을 삭제할 경우 clearfix를 추가함 -->
+            <h3>부트스트랩에서 float과 clearfix</h3>
+            <div class="clearfix roundeds">
+                <span class="float-left rounded">Float left</span>
+                <span class="float-right rounded">Float right</span>
+                <span>div가 clearfix라서 기본값 왼쪽 정렬</span>
+            </div>
+        </article><hr>
+        <article>
+            <!-- float에 sm(576px 이상), md(768px 이상), lg(992px 이상), xl(1200px 이상)을 
+                left, right와 함께 사용시 화면의 크기에 따라 html태그의 위치를 변경할 수 있음 -->
+                <!-- 오른쪽이나 왼쪽에 붙어있다가 화면이 저 크기에  -->
+            <h3>반응성 float</h3>
+            <div class="clearfix">
+                <div class="float-sm-right">화면크기가 576px 이상일 경우 float right</div><br>
+                <div class="float-md-right">화면크기가 768px 이상일 경우 float right</div><br>
+                <div class="float-lg-right">화면크기가 992px 이상일 경우 float rignt</div><br>
+                <div class="float-xl-right">화면크기가 1200px 이상일 경우 float right</div><br>
+                <div class="float-none">float none(오른쪽 왼쪽을 설정하지 않겠다)</div>
+            </div>
+        </article><br>
+        <article>
+            <!-- mx-auto를 이용하여 화면 중앙에 요소 표시 -->
+            <!-- mx-auto는 margin 설정 중 x축인 left와 right의 값을 auto로 설정한 것-->
+            <h3>태그 중앙 정렬하기</h3>
+            <div class="mx-auto bg-warning text-center" style="width: 150px;">
+                좌우중앙정렬
+            </div>
+        </article><hr>
+        <article>
+            <!-- 부트스트랩에서 기본 설정된 폭 사용하기 -->
+            <!-- width에서 딴 w만 class명으로 사용하고 폭 너비를 25%, 50%, 75$, 100%를 사용하여 w-25, w-50, w-75, w-100 
+                그리고 max width: 100%를 뜻하는 mw-100이 있음 -->
+            <h3>폭 설정하기</h3>
+            <div class="w-25 bg-warning">
+                width 25%(w-25)
+            </div>
+            <div class="w-50 bg-primary">
+                width 50%(w-50)
+            </div>
+            <div class="w-75 bg-info">
+                width 75%(w-75)
+            </div>
+            <div class="w-100 bg-success">
+                width 100%(w-100)
+            </div>
+            <div class="mw-100 bg-secondary" style="width : 300px;">
+                max width 100%(mw-100)
+            </div>
+            <!--div는 원래값이 100%기 떄문에 화면 전체로 나온다.
+                mw-100은 최대 100까지 줄 수 있다는 뜻인데 div안에 mw-100을 주면 한줄은 전체 다 차지해 버리게 된다.
+                span에다가 width를 줘도 먹히지 않는다-->
+        </article><hr>
+        <article>
+            <!-- 부트스트랩에서 기본 설정된 높이 사용하기 -->
+            <!-- height에서 h만 사용하고 높이 25%, 50%, 75%, 100%를 사용하여 h-25, h-50, h-100
+            그리고 max-height: 100%를 뜻하는 mh-100이 있음 -->
+            <h3>높이 설정하기</h3>
+            <div style="height: 200px; background-color: lightslategray;">
+                <div class="h-25 bg-dark" style="display:inline-block;">height 25%</div>
+                <div class="h-50 bg-primary" style="display:inline-block;" >height 50%</div>
+                <div class="h-75 bg-danger"style="display:inline-block;" >height 75%</div>
+                <div class="h-100 bg-warning" style="display:inline-block;">height 100%</div>
+                <div class="mh-100 bg-success" style="display:inline-block; height: 500px; ">max height 100%</div>
+                <!-- mh는 맥스값으로 100%를 줄 수 있다는뜻이닌깐 실제로 들어갈 높이를 설정해줘야한다. -->
+            </div>
+        </article><hr>
+        <article>
+            <!-- 부트스트랩에서 간격은 padding을 뜻하는 p세트와 margin을 뜻하는 m세트가 있다 -->
+            <!-- 반응성 웹을 사용하기 때문에 화면 크기를 뜻하는 xs(576px 미만), sm(576px이상), 
+                md(768px이상), lg9(992px이상), xl(1200px이상)가 있다 -->
+            <!-- 위치를 뜻하는 t세트(top), b세트(bottom), r세트(right), l세트(left), 
+                x세트(x축 즉, left와 right), y세트(y축 즉, top과 bottom), 빈설정(top, right, bottom, left)가 있음 -->
+            <!--실제 적용 값 0~5, auto가 있음  -->
+            <!-- 
+                0: 0 
+                1: 4px(0.25em)
+                2: 8px(0.5em)
+                3: 16px(1em)
+                4: 24px(1.5em)
+                5: 48px(3em)
+                auto : 자동설정  
+            -->
+            
+            <h3>부트스트랩에서의 간격</h3>
+            <div class="pt-4 bg-warning">
+                padding-top : 24px과 같은 효과
+            </div>
+            <div class="p-5 bg-success">
+                padding이 네방향 모두에 48씩 들어간 효과
+            </div>
+            <div class="m-5 bg-info pb-5">
+                margin이 네방향으로 48px이며 padding-bottom이 48px인것과 같은 효과
+            </div>
+        </article><hr>
+        <article>
+            <!-- html에 있는 shadow를 쉽게 사용하기 -->
+            <!-- shadow shadow-sm, shadow-lg, shadow-none이 있다. -->
+            <h3>그림자 효과 주기</h3>
+            <div class="shadow-none p-4 mb-4 bg-light">
+            그림자 사용 x
+            </div>
+            <div class="shadow-sm p-4 mb-4 bg-white">
+            작은 그림자
+            </div>
+            <div class="shadow p-4 mb-4 bg-white">
+            기본 그림자
+            </div>
+            <div class="shadow-lg p-4 mb-4 bg-white">
+            큰 그림자
+            </div>
+        </article><hr>
+        <article>
+            <!-- align-baseline, align-top, align-middle, align-bottom, 
+                align-text-top, align-text-bottom이 있음 -->
+            <!-- display 속성이 inline, inline-block과 테이블에서만 적용이 됨 -->
+            <h3>수직 정렬하기</h3>
+            <div style="background-color:lightgray;">
+                <span class="align-baseline" style="display:inline-block; height: 100px;">baseline</span>
+                <span class="align-top" style="display:inline-block; height: 100px;">align-top</span>
+                <span class="align-middle" style="display:inline-block; height: 100px;">align-middle</span>
+                <span class="align-bottom" style="display:inline-block; height: 100px;">align-bottom</span>
+                <span class="align-text-top" style="display:inline-block; height: 100px;">align-text-top</span>
+                <span class="align-text-bottom" style="display:inline-block; height: 100px;">align-text-bottom</span>
+            </div>      
+        <!-- span은 inline-level태그라서 height가 안먹힌다. -->
+        </article><hr>
+        <article>
+            <!-- CSS의 Visible을 부트스트랩 방식으로 표현 -->
+            <!-- Visible과 Invisible -->
+            <h3>visible 처리</h3>
+            <div class="visible bg-success">
+                visible 옵션
+            </div>
+            <div class="invisible bg-info">
+                invisible 옵션
+            </div>
+        </article><br>
+        <article>
+            <!-- iframe 같은 외부 요소를 사용할 경우에도 반응형 웹으로 동작할 때 사용 -->
+            <!-- embed-respnsive와 embed-respnsive-item을 사용하여 외부 컨텐츠를 화면에 출력 -->
+            <!-- 화면 비율 설정을 위한 embed-responsive-1by1, embed-responsiv-4by3, embed-responsive-16by9, embed-responsive-21by9 등이 있음 -->
+            <h3>반응형 비디오 및 슬라이드 쇼</h3>
+            <br>
+            <h3>1:1 비율</h3>
+            <div class="embed-responsive embed-responsive-1by1 w-25">
+                <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <h3>4:3 비율</h3>
+            <div class="embed-responsive embed-responsive-4by3 w-25">
+                <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <h3>16:9 비율</h3>
+            <div class="embed-responsive embed-responsive-16by9 w-25">
+                <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <h3>21:9 비율</h3>
+            <div class="embed-responsive embed-responsive-21by9 w-25">
+                <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+        </article><hr>
+        <article>
+        <h3>한줄에 먹히게 해보기</h3>
+        <div>
+                <h3>1:1 비율</h3>
+                <div class="embed-responsive embed-responsive-1by1 w-25"  style="display:inline-block; float: left;">
+                    <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <h3>4:3 비율</h3>
+                <div class="embed-responsive embed-responsive-4by3 w-25"  style="display:inline-block; float: left;">
+                    <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <h3>16:9 비율</h3>
+                <div class="embed-responsive embed-responsive-16by9 w-25"  style="display:inline-block; float: left;">
+                    <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                <h3>21:9 비율</h3>
+                <div class="embed-responsive embed-responsive-21by9 w-25"  style="display:inline-block; float: left;">
+                    <iframe src="http://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+        </div>
+        </article>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

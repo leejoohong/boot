@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>부트스트랩의 미디어 오브젝트</title>
+    <!-- 부트스트랩에서 지원하는 댓글 기능 -->
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="dispaly-2 text-success text-center">부트스트랩의 미디어 오브젝트</h1>
+    </header>
+  <section class="container">
+    <article>
+        <!-- div의 class명에 media를 입력하여 사용 -->
+        <!--  -->
+        <h3>media object 사용</h3>
+        <div class="media border p-3">
+            <img src="../img/pic1.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width : 60px;">
+            <div class="media-body">
+                <h4>홍길동<small><i>Posted on 2018-09-04</i></small></h4>
+                <p>석가는 이 가는 봄바람이다. 영락과 보이는 것이 따뜻한 구할 아니더면, 길을 모래뿐일 낙원을 것이다. 
+                있는 풀밭에 가치를 예가 이것은 듣는다. 것이 풀이 가장 인간의 끓는 얼음이 없으면 속에서 교향악이다. 
+                트고, 옷을 끝까지 끓는 이것이다. 없으면 있음으로써 구하지 되는 이상의 것이다.</p>
+            </div>
+        </div>
+    </article><hr>
+    <article>
+        <div class="media border p-3">
+            <img src="../img/pic1.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+            <div class="media-body">
+                <h4>홍길동<small><i>Posted on 2018-09-04</i></small></h4>
+                <p>석가는 이 가는 봄바람이다. 영락과 보이는 것이 따뜻한 구할 아니더면, 길을 모래뿐일 낙원을 것이다. 
+                        있는 풀밭에 가치를 예가 이것은 듣는다. 것이 풀이 가장 인간의 끓는 얼음이 없으면 속에서 교향악이다. 
+                        트고, 옷을 끝까지 끓는 이것이다. 없으면 있음으로써 구하지 되는 이상의 것이다.</p>
+                    <!-- media-body 안에 media를 다시 하나 생성해준거 이러면 댓글에 답글이 달린거 처럼 답글이 들여져서 화면이 구성이 된다. -->
+                <div class="media p-3">
+                    <img src="../img/pic3.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+                    <div class="media-body">
+                        <h4>정우성<small><i>posted on 2018-09-04</i></small></h4>
+                        <p>때까지 것은 뜨거운지라, 같이 고행을 소담스러운 듣는다. 이것은 고행을 가진 생명을 사랑의 무한한 풀밭에 봄바람이다. 
+                        인생에 이상 뛰노는 그리하였는가? 청춘이 얼마나 피고, 황금시대의 인간에 그림자는 것이다. 못할 곧 되려니와, 옷을 대고, 
+                        남는 따뜻한 힘있다. 피고 인류의 뛰노는 원질이 위하여서, 이상 용기가 청춘 두손을 황금시대다. 원질이 물방아 이것은 가슴이 보라.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article><hr>
+    <article>
+        <!-- 이미지를 오른쪽에 배치할 경우 클래스 명이 따로 있는 것이 아니라 img 태그와 media-body의 순서를 변경 -->
+        <h3>media object에서 이미지 오른쪽에 배치</h3>
+        <div class="media border p-3">
+            <div class="media-body">
+                <h4>홍길동<small><i>Posted on 2018-09-04</i></small></h4>
+                <p>우리 대고, 것은 이 것은 별과 과실이 사막이다. 용기가 온갖 살 어디 부패뿐이다.</p>
+            </div>
+            <img src="../img/pic1.jpg" alt="" class="ml-3 mt-3 rounded-circle" style="width:60px;">
+        </div>
+    </article><hr>
+    <article>
+        <!-- media object 사용 시 img 태그의 표시 위치를 변경하려면 flex 유틸리티를 사용하여 위치를 설정함 -->
+        <!-- align-self-start, align-self-center, align-self-end -->
+        <h3>media object에서 이미지 위치 설정</h3>
+        <div class="media border p-3">
+            <img src="../img/pic3.jpg" alt="" class="align-self-start mr-3" style="width:60px">
+            <!-- 기본값으로 윗쪽에 위치 -->
+            <div class="media-body">
+                <h4>홍길동</h4>
+                <p>앞이 있는 든 위하여 위하여 일월과 얼마나 이것이다. 온갖 몸이 작고 것이다. 
+                이상은 풀이 목숨이 역사를 피부가 청춘의 길을 바이며, 그리하였는가? 풀이 그들은 과실이 위하여, 실현에 부패뿐이다. 
+                품고 붙잡아 웅대한 따뜻한 싸인 위하여서. 청춘을 충분히 너의 뜨거운지라, 무한한 그들에게 피고, 끓는다. 
+                설레는 곳으로 그러므로 풍부하게 사랑의 튼튼하며, 그들은 때문이다. 길지 석가는 하여도 없으면, 거친 열락의 피부가 사는가 끓는 쓸쓸하랴? 
+                물방아 예가 불어 살았으며, 있는 청춘이 오직 석가는 봄바람이다. 것이다.보라, 무엇을 실로 살았으며, 공자는 사막이다.</p>
+            </div>
+        </div>
+        <div class="media border p-3">
+            <img src="../img/pic3.jpg" alt="" class="align-self-center mr-3" style="width:60px">
+            <!-- 중간에 위치 -->
+            <div class="media-body">
+                <h4>홍길동</h4>
+                <p>앞이 있는 든 위하여 위하여 일월과 얼마나 이것이다. 온갖 몸이 작고 것이다. 
+                이상은 풀이 목숨이 역사를 피부가 청춘의 길을 바이며, 그리하였는가? 풀이 그들은 과실이 위하여, 실현에 부패뿐이다. 
+                품고 붙잡아 웅대한 따뜻한 싸인 위하여서. 청춘을 충분히 너의 뜨거운지라, 무한한 그들에게 피고, 끓는다. 
+                설레는 곳으로 그러므로 풍부하게 사랑의 튼튼하며, 그들은 때문이다. 길지 석가는 하여도 없으면, 거친 열락의 피부가 사는가 끓는 쓸쓸하랴? 
+                물방아 예가 불어 살았으며, 있는 청춘이 오직 석가는 봄바람이다. 것이다.보라, 무엇을 실로 살았으며, 공자는 사막이다.</p>
+            </div>
+        </div>
+        <div class="media border p-3">
+            <img src="../img/pic3.jpg" alt="" class="align-self-end mr-3" style="width:60px">
+            <!-- 밑쪽에 위치 -->
+            <div class="media-body">
+                <h4>홍길동</h4>
+                <p>앞이 있는 든 위하여 위하여 일월과 얼마나 이것이다. 온갖 몸이 작고 것이다. 
+                이상은 풀이 목숨이 역사를 피부가 청춘의 길을 바이며, 그리하였는가? 풀이 그들은 과실이 위하여, 실현에 부패뿐이다. 
+                품고 붙잡아 웅대한 따뜻한 싸인 위하여서. 청춘을 충분히 너의 뜨거운지라, 무한한 그들에게 피고, 끓는다. 
+                설레는 곳으로 그러므로 풍부하게 사랑의 튼튼하며, 그들은 때문이다. 길지 석가는 하여도 없으면, 거친 열락의 피부가 사는가 끓는 쓸쓸하랴? 
+                물방아 예가 불어 살았으며, 있는 청춘이 오직 석가는 봄바람이다. 것이다.보라, 무엇을 실로 살았으며, 공자는 사막이다.</p>
+            </div>
+        </div>
+    </article><hr>
+    <article>
+
+    </article>
+  </section>  
+  <br><br><br><br>
+</body>
+</html>
