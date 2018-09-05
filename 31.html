@@ -1,147 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>부트스트랩의 UI구성하기</title>
-    
-    <link rel="stylesheet" href="../style/css/bootstrap.css">
-    <script src="../style/js/jquery-3.3.1.js"></script>
-    <script src="../style/js/popper.js"></script>
-    <script src="../style/js/bootstrap.js"></script>   
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>부트스트랩의 UI 구성하기</title>
 
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
 
-</head>
-<body>
-    <header class="jumbotron text-center text-secondary mb-0">
-        <h1 class="display-2">블로그 형태의 UI 만들기</h1>
-    </header>
-    <section>
-        <div class="navbar navbar-expand-sm navbar-dark bg-dark  mt-0">
-            <ul class="navbar-nav">
-                <a href="#" class="navbar-brand">Home</a>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Notice</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Notice</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Stroy</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Game</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Music</a>
-                </li>
-            </ul>
-        </div>
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <main class="container">
             <div class="row">
-                <aside class="col-md-2">
-                    <div class="navbar navbar-dark bg-secondary">
+                <div class="col-sm-3 sidenav">
+                    <h4>hyosung Blog</h4>
+                    <nav class="navbar">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><h4>문학</h4></a>
-                                <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item"> <h3>소설</h3></a>
-                                <a href="#" class="dropdown-item"><h3>시</h3></a> 
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><h4>컴퓨터</h4></a>
-                                <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item"> <h3>네트워크</h3></a>
-                                <a href="#" class="dropdown-item"><h3>웹개발</h3></a> 
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Html5</a>
                             </li>
-                        </ul>    
-                    </div>
-                </aside>
-
-                <div class="col-md-8 mr-0">
-                    <article class="container text-center">
-                        <table class="table table-hover table-striped table-bordered">
-                            <tr>
-                                <th>번호</th>
-                                <th>날짜</th>
-                                <th>제목</th>
-                                <th>조회수</th>
-                                <th>추천수</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2018.09.04</td>
-                                <td>맛있는 아이스크림 만드는 방법</td>
-                                <td>46</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>2018.09.02</td>
-                                <td>불면증 치료하는 방법</td>
-                                <td>32</td>
-                                <td>2</td>
-                            </tr>
-                        </table>
-                        <hr>
-                        <textarea name="" id="" cols="120" rows="12"></textarea>
-                        <form action="">
-                            <div class="btn-group d-flex justify-content-end">
-                            <button class="btn btn-primary">글쓰기</button>
-                            <button class="btn btn-primary">취소</button>
-                            <button class="btn btn-primary">저장</button>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">CSS3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">BootStrap</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success">Search</button>
+                                </div>
                             </div>
                         </form>
-                    </article>
+                    </nav>
                 </div>
-        
-                <div class="col-md-2">
-                    <form action="">
-            
-                        <div class="form-group">
-                            <label for="id">ID :</label>
-                            <input type="text" id="id" name="id" placeholder="아이디를 입력하세요" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="pw">PW : </label>
-                            <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력하세요" class="form-control">
-                        </div>
-                        <button class="btn btn-secondary btn-block" type="submit">login</button>
+                <div class="col-sm-9">
+                    <h4><small>Recent Post</small></h4>
+                    <hr>
+
+                    <h2>첫번째 포스트</h2>
+                    <h5>Post by Hyosung, <small><i>2018-09-04</i></small></h5>
+                    <span class="badge badge-primary">1St</span>
+                    <span class="badge badge-success">해시태그</span>
+                    <p>대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한 재정·경제상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.</p><hr><br><br>
+
+                    <h4><small>Recent Post</small></h4>
+                    <hr>
+
+                    <h2>두번째 포스트</h2>
+                    <h5>Post by Hyosung, <small><i>2018-09-04</i></small></h5>
+                    <span class="badge badge-primary">2nd</span>
+                    <span class="badge badge-success">해시태그</span>
+                    <p>대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한 재정·경제상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.</p>
                     
+                    <form>
+                        <label for="comm">Comment : </label>
+                        <div class="form-group">
+                            <textarea name="" id="comm" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-primary">입력</button>
                     </form>
+                    
+                    <br><br>
+                    <div class="media border p-3">
+                        <img src="../img/pic1.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+                        <div class="media-body">
+                            <h4>홍길동</h4>
+                            <p>국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다.</p>
+                            <div class="media p-3">
+                                <img src="../img/pic3.jpg" alt="" class="mr-3 mt-3 rounded-circle" style="width: 60px;">
+                                <div class="media-body">
+                                    <h4>홍길동</h4>
+                                    <p>국가는 사회보장·사회복지의 증진에 노력할 의무를 진다. 대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><br><br>
                 </div>
             </div>
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a href="#" class="page-link">이전</a>
-            </li>
-            <li class="page-item active">
-                <a href="#" class="page-link">1</a>
-            </li>
-            <li class="page-item">
-                <a href="#" class="page-link">2</a>
-            </li>
-            <li class="page-item">
-                <a href="#" class="page-link">3</a>
-            </li>
-            <li class="page-item">
-                <a href="#" class="page-link">다음</a>
-            </li>
-        </ul>
-    </section>
-    
-    <footer class="jumbotron">
-        <div class="row ">
-            <div class="col-md">
-                <p> </p>
-            </div>
-            <div class="col-md-3">
-                <span style="font-weight: bold; font-size: 24px;">
-                    <p>만든사람 이주홍</p>
-                    <p>email : dlwnghdspdh@naver.com</p>
-                </span>
-            </div>
-        </div>
-    </footer>
-</body>
+        </main>
+        <footer class="container-fluid text-center bg-dark text-light p-3">
+            <p>Since 2018</p>
+            <p>made by hyosung it</p>
+        </footer>
+    </body>
 </html>

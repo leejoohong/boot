@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>부트스트랩 캐로셀 로그인 화면</title>
+        
+        <link rel="stylesheet" href="../style/css/bootstrap.css">
+        <script src="../style/js/jquery-3.3.1.js"></script>
+        <script src="../style/js/popper.js"></script>
+        <script src="../style/js/bootstrap.js"></script>   
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+            hr {
+                margin: 5em 0;
+            }
+            .say{
+                top: 150px;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+            <ul class="navbar-nav mr-auto">
+                <a href="#" class="navbar-brand">Carousel</a>
+                <li class="nav-item">
+                    <a href="" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control mr-2">
+                    <button class="btn btn-outline-success">search</button>
+                </div>      
+            </form>
+        </nav>
+        </header>
+        <main>
+         
+            <section>
+                <!-- 캐로셀 -->
+                
+                <div id="demo" class="carousel slide" data-role="carousel">
+
+                    <ul class="carousel-indicators">
+                        <!-- carousel-inner있는거를 잡아주는 부분 -->
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="margin: 0 auto;">
+                            <img src="../img/rock1.jpg" alt="" width="100%" height="512px;">
+                            <div class="carousel-caption say">
+                               <h1>그림의 제목을 넣어보아요.</h1>
+                               <p>각급 선거관리위원회는 선거인명부의 작성등 선거사무와 
+                                   국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 
+                                   대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                                <p>국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 
+                                    탄핵결정은 공직으로부터 파면함에 그친다. 
+                                    그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="margin: 0 auto;">
+                            <img src="../img/rock2.jpg" alt="" width="100%" height="512px;">
+                            <div class="carousel-caption text-left say">
+                                <h1>그림의 제목을 넣어보아요.</h1>
+                                <p>각급 선거관리위원회는 선거인명부의 작성등 선거사무와 
+                                    국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 
+                                    대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                                <p>국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 
+                                탄핵결정은 공직으로부터 파면함에 그친다. 
+                                그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="margin: 0 auto;">
+                            <img src="../img/rock3.jpg" alt="" width="100%" height="512px">
+                            <div class="carousel-caption text-right say">
+                                <h1>그림의 제목을 넣어보아요.</h1>
+                                <p>각급 선거관리위원회는 선거인명부의 작성등 선거사무와 
+                                    국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 
+                                    대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다.</p>
+                                <p>국무회의는 대통령·국무총리와 15인 이상 30인 이하의 국무위원으로 구성한다. 
+                                    탄핵결정은 공직으로부터 파면함에 그친다. 
+                                    그러나, 이에 의하여 민사상이나 형사상의 책임이 면제되지는 아니한다.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon">
+                        </span>
+                    </a>
+                    <!-- 이전으로 가는 버튼 만들기 -->
+
+                    <a href="#demo" class="carousel-control-next" data-slide="next">
+                     <span class="carousel-control-next-icon">
+                        </span>
+                    </a>
+                    <!-- 오른쪽으로 가는 버튼 만들기 -->
+
+                </div>
+            </section>
+
+            <!-- 컨테츠 -->
+            <section class="container mb-4 mt-3">
+
+                <article class="row">
+
+                    <div class="col-md-4 text-center ">
+                        <div>
+                            <img src="../img/pic1.jpg" alt="" class="rounded-circle" width="140" height="140">
+                        </div>
+                        <h2 class="text-center">Heading</h2>
+                        <p class="text-center">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <a class="btn btn-secondary">view details &raquo;</a> 
+                    </div> 
+                      
+                    <div class="col-md-4  text-center">
+                            <div>
+                                <img src="../img/pic1.jpg" alt="" class="rounded-circle" width="140" height="140">
+                            </div>
+                            <h2 class="text-center">Heading</h2>
+                            <p class="text-center">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                                Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, 
+                                vestibulum at eros. Praesent commodo cursus magna.</p>
+                            <a class="btn btn-secondary">view details &raquo;</a> 
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <div>
+                            <img src="../img/pic1.jpg" alt="" class="rounded-circle" width="140" height="140">
+                        </div>
+                        <h2 class="text-center">Heading</h2>
+                        <p class="text-center">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. 
+                            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, 
+                            porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                        <a class="btn btn-secondary">view details &raquo;</a> 
+                    </div>
+
+                </article><hr>
+
+                <article class="row">
+                    
+                    <div class="col-md-7">
+                        <h2 class="text-secondary">First featurette heading. It'll blow your mind.</h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. 
+                        Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, 
+                        vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+
+                    <div class="col-md-5">
+                        <img src="https://fakeimg.pl/450/">
+                    </div>
+            
+                </article><hr>
+
+                <article class="row">
+                    
+                    <div class="col-md-5">
+                        <img src="https://fakeimg.pl/450" alt="">
+                    </div>
+
+                    <div class="col-md-7">
+                        <h2 class="text-secondary">Oh yeah, it's that good. See for yourself.</h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. 
+                            Vestibulum id ligula porta felis euismod semper. 
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
+                            Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                   
+                </article> <hr>
+
+                <article class="row">
+
+                    <div class="col-md-7">
+                        <h2 class="text-secondary">And lastly, this one. Checkmate.</h2>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. 
+                            Vestibulum id ligula porta felis euismod semper. 
+                            Praesent commodo cursus magna, vel scelerisque nisl consectetur. 
+                            Fusce dapibus, tellus ac cursus commodo.</p>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        <img src="https://fakeimg.pl/450" alt="">
+                    </div>
+
+                </article>
+            </section>
+        </main><hr>
+        <footer class="container">
+            <div class="clearfix pt-3 pb-2">
+                <p class="float-left">© 2017-2018 Company, Inc. · Privacy · Terms</p>
+                <a class="float-right" href="#">Back to top</a>
+            </div> 
+        </footer>
+    </body>
+</html>
