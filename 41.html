@@ -57,9 +57,15 @@
         border: 0px solid rgba(0, 0, 0, 0.125);
         border-radius: 0.25rem;
     }
+    .vvv {
+        color:white;
+    }
+    .vvv:hover{
+        color: green !important;
+    }
     </style>
 </head>
-<body>
+<body id="home">
     <header class="text-center">
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow bg-white navi">
                 <a href="#" class="navbar-brand mr-auto text-secondary">Logo</a>
@@ -90,7 +96,7 @@
                         <br>
                         <h1>Stop wasting valuable time with projects that just isn't you.</h1>
                         <br>
-                        <button type="submit" class="content2"><h4>Learn more and start today</h4></button>
+                        <button type="submit" class="content2"><h4><a href="#id1" style="color:black; text-decoration:none">Learn more and start today</a></h4></button>
                 </div>
                 <div class="content3">
                     <i class="fa fa-facebook-official"></i>
@@ -103,7 +109,7 @@
             </article>
         </section>
         <section>
-            <article class="bg-white text-center mt-5">
+            <article class="bg-white text-center mt-5" id="id1">
                 <P style="font-size:2em;">ABOUT THE COMPANY<P>
                 <p style="font-size: 1.5em;">Key features of our company</p>
                 <div class="row text-center mt-5 mb-5">
@@ -145,7 +151,9 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore.</p>
                             <br>
-                            <button style="background-color:black; width: 200px; height: 60px;" class="text-white"><i class="fa fa-th"></i> View Our Works</button>
+                            <button style="background-color:black; width: 200px; height: 60px;" class="text-white"><i class="fa fa-th"></i> 
+                             <a href="#id2" style="text-decoration:none; color: white;">View Our Works</a>   
+                            </button>
                         </div>
                         <div class="col-md">
                             <img src="../img/phone_buildings.jpg" alt="" width="80%;" height="500px">
@@ -238,7 +246,7 @@
             </article>
         </section>
         <section style="margin-top:50px;" class="text-center">
-            <article class="mb-5">
+            <article class="mb-5" id="id2">
                 <div>
                     <P style="font-size:2em;" >OUR WORK</P>      
                    <P style="font-size:1.5em;">What we've done for people</P>
@@ -420,13 +428,13 @@
                         </div>
                         <br>
                         <div class="text-left">
-                            <input type="text" placeholder="Name" class="form-control">
+                            <input type="text" placeholder="Name" class="form-control" required>
                             <br>
-                            <input type="text" placeholder="Email" class="form-control">
+                            <input type="text" placeholder="Email" class="form-control" required>
                             <br>
-                            <input type="text" placeholder="Subject" class="form-control">
+                            <input type="text" placeholder="Subject" class="form-control" required>
                             <br>
-                            <input type="text" placeholder="message" class="form-control">
+                            <input type="text" placeholder="message" class="form-control" required>
                             <br>
                             <button style="background-color:black; border: 0px; height: 40px;" class="text-white"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
                         </div>
@@ -441,7 +449,7 @@
     <footer style="position: relative; width: 100%; height: 300px; background-color: black;">
         <div style="position:absolute; top: 80px; left: 900px;">
             <div class="text-center">
-            <button style="background-color:white; border: 0px; width: 150px; height: 50px;"><a href="#" style="color:black;"><i class="fa fa-arrow-up"></i> To the top</a></button>
+            <button style="background-color:white; border: 0px; width: 150px; height: 50px;"><a href="#home" style="color:black;"><i class="fa fa-arrow-up"></i> To the top</a></button>
             </div>
             <br>
             <div class="text-center text-white" style="font-size: 1.5em;">
@@ -453,7 +461,7 @@
                 <i class="fa fa-linkedin"></i>
             </div>
             <br>
-            <p style="color:white;">Powered by <a href="#" style="color:white; text-decoration:underline;">w3.css</a></p>
+            <p style="color:white;">Powered by <a href="#" style="text-decoration:underline;" class="vvv">w3.css</a></p>
         </div>
     </footer>
 </body>
