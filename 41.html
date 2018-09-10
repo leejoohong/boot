@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>부트스트랩의 툴팁과 팝오버</title>
+    <title>Checkout form</title>
     
     <link rel="stylesheet" href="../style/css/bootstrap.css">
     <script src="../style/js/jquery-3.3.1.js"></script>
@@ -11,40 +11,450 @@
     <script src="../style/js/bootstrap.js"></script>   
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <style>
+    .navi{
+        position: relative;
+    }
+    .bg{
+        background-image: url("../img/mac.jpg"); width: 100%; min-height: 1100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        }
+    .content{
+        position: absolute;
+        z-index:0;
+        top: 400px;
+        left: 100px;
+    }
+    .content2{
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 0px;
+        height: 70px;
+        color: black;
+    }
+    .content3{
+        position: absolute;
+        bottom: 100px;
+        color: rgba(255, 255, 255, 0.5);
+        left: 100px;
+        font-size: 2em;
+    }
+    .a{
+        list-style-type: none;
+    }
+    .card2{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
+    }
+    </style>
 </head>
 <body>
-    <header class="bg-primary">
-    
-        <nav class="container navbar-expand-sm bg-primary navbar-dark" >
-            <ul class="navbar-nav">
-                <a href="#" class="navbar-brand mr-5"> <img src="https://www.xpressengine.com/layouts/xe_v4/img/bi-lg.png" alt="" width="200px" height="30px"></a>
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">About</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">Get involve</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">Blog</a>
-                </li>
-
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">Download</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">Suport</a>
-                </li>
-                <li class="nav-item mt-1">
-                    <a href="#" class="nav-link mx-2">Showcase</a>
-                </li>
-                <li class="nav-item mt-1">
-                        <a href="#" class="nav-link mx-2">XE3</a>
-                </li>
-                <a href="#" class="navbar-brand ml-auto mt-1"><p><small>로그인</small></p></a>
-            </ul>
-        </nav>
-      
+    <header class="text-center">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top shadow bg-white navi">
+                <a href="#" class="navbar-brand mr-auto text-secondary">Logo</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item p-0">
+                        <a href="#" class="text-dark nav-link mx-2"> ABOUT</a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a href="#" class="text-dark nav-link mx-2"> <i class="fa fa-user"> TEAM</i></a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a href="#" class="nav-link text-dark mx-2"> <i class="fa fa=th"> WORK</i></a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a href="#" class="nav-link text-dark mx-2"> <i class="fa fa-usd"> PRICING</i></a>
+                    </li>
+                    <li class="nav-item p-0">
+                        <a href="#" class="nav-link text-dark mx-2"> <i class="fa fa-envelope"> CONTACT</i></a>
+                    </li>
+                </ul>
+            </nav>
     </header>
-    
+    <main style="position:relative;">
+        <section>
+            <article class="bg">
+                <div class="content text-white">
+                        <h1 class="display-3">Start something that matters</h1>
+                        <br>
+                        <h1>Stop wasting valuable time with projects that just isn't you.</h1>
+                        <br>
+                        <button type="submit" class="content2"><h4>Learn more and start today</h4></button>
+                </div>
+                <div class="content3">
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-snapchat"></i>
+                    <i class="fa fa-pinterest-p"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="bg-white text-center mt-5">
+                <P style="font-size:2em;">ABOUT THE COMPANY<P>
+                <p style="font-size: 1.5em;">Key features of our company</p>
+                <div class="row text-center mt-5 mb-5">
+                    <div class="col-md">
+                        <i class="fa fa-desktop" style="font-size: 100px"></i>
+                        <br>
+                        <h3>Responsive</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col-md">
+                        <i class="fa fa-heart" style="font-size: 100px"></i>
+                        <br>
+                        <h3>Passion</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col-md">
+                        <i class="fa fa-diamond" style="font-size: 100px"></i>
+                        <br>
+                        <h3>Design</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col-md">
+                        <i class="fa fa-cog" style="font-size: 100px"></i>
+                        <br>
+                        <h3>Support</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="jumbotron">
+                    <div class="mt-5 pt-4 row">
+                        <div class="col-md">               
+                            <h1>We know design.</h1>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore.</p>
+                            <br>
+                            <button style="background-color:black; width: 200px; height: 60px;" class="text-white"><i class="fa fa-th"></i> View Our Works</button>
+                        </div>
+                        <div class="col-md">
+                            <img src="../img/phone_buildings.jpg" alt="" width="80%;" height="500px">
+                        </div> 
+                    </div>
+            </article>
+        </section>
+        <section class="mt-5 pt-5 mx-5">
+            <article class="text-center mb-5">
+                <p style="font-size: 2em;">THE TEAM</p>
+                <br>
+                <p  style="font-size: 1.5em;">The ones who runs this company</p>
+            </article>
+            <article class="row mt-5 pt-5" style="filter:grayscale(75%);">
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <p style="font-size: 2em">John Doe<p>
+                            <p class="text-secondary" style="font-size: 20px">CEO & Founder</p>
+                            <p style="font-size: 20px"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>  
+                            <button class="btn btn-white btn-block text-center"><i class="fa fa-envelope" style="font-size: 20px;"> contact</i></button>
+                        </div>
+                            
+                     
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                            <p style="font-size: 2em">Anja Doe<p>
+                            <p class="text-secondary" style="font-size: 20px">Art Director</p>
+                            <p style="font-size: 20px"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>  
+                            <button class="btn btn-white btn-block text-center"><i class="fa fa-envelope" style="font-size: 20px;"> contact</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card">
+                        <div class="card-head">
+                            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-body">
+                                <p style="font-size: 2em">Mike Ross<p>
+                                <p class="text-secondary" style="font-size: 20px">Web Designer</p>
+                                <p style="font-size: 20px"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>  
+                                <button class="btn btn-white btn-block text-center"><i class="fa fa-envelope" style="font-size: 20px;"> contact</i></button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-md">
+                        <div class="card">
+                            <div class="card-head">
+                                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="" width="100%">
+                            </div>
+                            <div class="card-body">
+                                <p style="font-size: 2em">Dan Stars<p>
+                                <p class="text-secondary" style="font-size: 20px">Designer</p>
+                                <p style="font-size: 20px"> Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>  
+                                <button class="btn btn-white btn-block text-center"><i class="fa fa-envelope" style="font-size: 20px;"> contact</i></button>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+            <article class="mt-5">
+                <div style="margin-top:150px; padding: 80px 0" class="bg-secondary row text-center text-white">
+                    <div class="col-md">
+                        <h1 class="display-5" style="margin:0px;">14+</h1>
+                        <p style="margin:0px;">Partners</p>
+                    </div>
+                    <div class="col-md">
+                        <h1 class="display-5">55+</h1>
+                        <p style="margin:0px;" >Projects Done</p>
+                    </div>
+                    <div class="col-md">
+                        <h1 class="display-5" style="margin:0px;">89+</h1>
+                        <p style="margin:0px;">Happy Clients</p>
+                    </div>
+                    <div class="col-md">
+                        <h1 class="display-5" style="margin:0px;">150+</h1>
+                        <p style="margin:0px;">Meetings</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section style="margin-top:50px;" class="text-center">
+            <article class="mb-5">
+                <div>
+                    <P style="font-size:2em;" >OUR WORK</P>      
+                   <P style="font-size:1.5em;">What we've done for people</P>
+                </div>
+            </article>
+            <article class="mt-5 row">
+                <div class="col-md">
+                    <img src="../img/tech_mic.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_phone.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_drone.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_sound.jpg" alt="" width="90%">
+                </div>
+            </article>
+            <article class="row mt-3">
+                <div class="col-md">
+                    <img src="../img/tech_tablet.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_camera.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_typewriter.jpg" alt="" width="90%">
+                </div>
+                <div class="col-md">
+                    <img src="../img/tech_tableturner.jpg" alt="" width="90%">
+                </div>
+            </article>
+        </section>
+        <section style="margin-top:100px;">
+            <article class="jumbotron mb-0">
+                <div class="row">
+                    <div class="col-md ml-2">
+                        <h1>Our Skills.</h1>
+                        <br>
+                        <p style="font-size:1.5em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <br>
+                        tempor incididunt ut labore et dolore.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        <br>
+                        tempor incididunt ut labore et dolore.</p>
+                    </div>
+                    <div class="col-md">    
+                        <div>
+                            <ul class="a">
+                                <li>
+                                    <label for="">
+                                        <i class="fa fa-camera" style="font-size: 1.5em">Photographys</i>
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <div class="progress bg-secondary" style="height: 30px;">
+                                        <div class="progressbar bg-dark text-center text-white" style="width: 90%; font-size: 2em;">90%</div>
+                                    </div>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="">
+                                        <i class="fa fa-desktop" style="font-size: 1.5em">Photographys</i>
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <div class="progress bg-secondary" style="height: 30px;">
+                                        <div class="progressbar bg-dark text-center text-white" style="width: 90%; font-size: 2em;">90%</div>
+                                    </div>
+                                </li>
+                                <br>
+                                <li>
+                                    <label for="">
+                                        <i class="fa fa-photo" style="font-size: 1.5em">Photographys</i>
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <div class="progress bg-secondary" style="height: 30px;">
+                                        <div class="progressbar bg-dark text-center text-white" style="width: 90%; font-size: 2em;">90%</div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="bg-dark text-center text-white pb-5">
+            <article class="bg-dark pt-5">
+                <h1>PRICING</h1>
+                <br>
+                <p>Choose a pricing plan that fits your needs.</p>
+            </article>
+            <article class="pt-5 row">
+                <div class="col-md">
+                    <br>
+                    <div class="card2 text-center ml-3" style="width: 90%">
+                        <div class="card-head text-white" style="background-color: black; border: 0px; margin: 0px;">
+                            <h1>Basic</h1>
+                        </div>
+                        <div class="card-body text-dark">
+                               <p><b>10GB</b> Storage</p>
+                                <hr>
+                                <p><b>10</b> Emails</p>
+                                <hr>
+                                <p><b>10</b> Domains</p>
+                                <hr>
+                                <p><b>Endless</b>Support</p>
+                                <hr>
+                                <h1>$ 10</h1>
+                                <p class="text-secondary mb-0">per month</p>
+                        </div>
+                        <div class="card-footer">
+                            <button style="background-color:black; color: white; font-size: 20px; border: 0px; height: 50px;">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card2 text-center ml-3" style="width: 90% border: 0px;">
+                            <div class="card-head text-white" style="background-color: red;border: 0px; margin: 0px;">
+                                <br>
+                                <h1 class="mb-4">Pro</h1>
+                            </div>
+                            <div class="card-body text-dark">
+                                   <p><b>25GB</b> Storage</p>
+                                    <hr>
+                                    <p><b>25</b> Emails</p>
+                                    <hr>
+                                    <p><b>25</b> Domains</p> 
+                                    <hr>
+                                    <p><b>Endless</b> Support</p> 
+                                    <hr>
+                                    <h1><b>$ 25</b></h1>
+                                    <p class="text-secondary mb-0">per month</p>                                   
+                            </div>
+                            <div class="card-footer">
+                                <button style="background-color:black; color: white; font-size: 20px; border: 0px; height: 50px;">Sign Up</button>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md">
+                    <br>
+                    <div class="card2 text-center ml-3" style="width: 90%">
+                            <div class="card-head text-white" style="background-color: black; border: 0px; margin: 0px;">
+                                <h1>Premium</h1>
+                            </div>
+                            <div class="card-body text-dark">
+                                   <p><b>50GB</b>Storage</p>
+                                    <hr>
+                                    <p><b>50</b>Emails</p>
+                                    <hr>
+                                    <p><b>50</b>Domains</p>
+                                    <hr>
+                                    <p><b>Endless</b>Support</p>
+                                    <hr>
+                                    <h1><b>$ 50</b></h1>
+                                    <p class="text-secondary mb-0">per month</p>
+                            </div>
+                            <div class="card-footer">
+                                <button style="background-color:black; color: white; font-size: 20px; border: 0px; height: 50px;">Sign Up</button>
+                            </div>
+                        </div>
+                </div>
+            </article>
+        </section>
+        <section class="jumbotron pb-5 text-center mb-0">
+            <form action="">
+                <h1>CONTACT</h1>
+                <br>
+                <P>Lets get in touch. Send us a message:</P>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="text-left">
+                            <p><i class="fa fa-map-marker" style="font-size: 2em"></i>&nbsp; &nbsp; &nbsp; &nbsp; Chicago, US</p>
+                            <p><i class="fa fa-phone" style="font-size: 2em"></i> &nbsp; &nbsp; &nbsp; Phone: +00 151515</p>
+                            <p><i class="fa fa-envelope" style="font-size: 2em"></i>&nbsp; &nbsp; &nbsp;  Email: mail@mail.com</p>
+                        </div>
+                        <br>
+                        <div class="text-left">
+                            <input type="text" placeholder="Name" class="form-control">
+                            <br>
+                            <input type="text" placeholder="Email" class="form-control">
+                            <br>
+                            <input type="text" placeholder="Subject" class="form-control">
+                            <br>
+                            <input type="text" placeholder="message" class="form-control">
+                            <br>
+                            <button style="background-color:black; border: 0px; height: 40px;" class="text-white"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <img src="../img/map.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer style="position: relative; width: 100%; height: 300px; background-color: black;">
+        <div style="position:absolute; top: 80px; left: 900px;">
+            <div class="text-center">
+            <button style="background-color:white; border: 0px; width: 150px; height: 50px;"><a href="#" style="color:black;"><i class="fa fa-arrow-up"></i> To the top</a></button>
+            </div>
+            <br>
+            <div class="text-center text-white" style="font-size: 1.5em;">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <br>
+            <p style="color:white;">Powered by <a href="#" style="color:white; text-decoration:underline;">w3.css</a></p>
+        </div>
+    </footer>
 </body>
 </html>
