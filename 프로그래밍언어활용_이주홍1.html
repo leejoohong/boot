@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>프로그래밍언어 활용시험 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    .container table, tr, td, th{
+        margin:0 auto;
+        border: 1px solid cornflowerblue;
+        background-color: rgba(0, 0, 255, 0.3);
+        color: white;
+        text-align: center;    
+    }
+    .center{
+        text-align: center;
+        color: white;
+    }
+    .btn{
+        background-color: rgba(0, 0, 255, 0.6);
+        color: white;
+    }
+    .body{background-image: 
+    url("https://news.samsung.com/kr/wp-content/uploads/2015/09/%ED%88%AC%EB%AA%A8%EB%A1%9C%EC%9A%B0%EC%97%90%EC%84%B8%EC%9D%B4%EA%B0%80%EC%9E%A5%EC%8A%AC%ED%94%88%EC%9D%8C%EC%8B%9D8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    </style>
+</head>
+<body class="body">
+    <header>
+    <h1 class="center" style="margin-top:30px;">먹보의 게시판 게시판</h1>
+    </header>
+    <main style="margin-bottom:0px;">
+        <form action="">
+            <section style="margin-top:150px;">
+                <article class="container">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                            <th>추천</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1004</td>
+                            <td>오늘은 치킨이 땡기는군</td>
+                            <td>이주홍</td>
+                            <td>2018.09.11</td>
+                            <td>162</td>
+                            <td>42</td>
+                        </tr>
+                        <tr>
+                            <td>1003</td>
+                            <td>아이스크림을 안녹게 보관하는법</td>
+                            <td>아이스요정</td>
+                            <td>2018.09.08</td>
+                            <td>562</td>
+                            <td>166</td>
+                        </tr>
+                        <tr>
+                            <td>1002</td>
+                            <td>고기를 먹으면 맛있지</td>
+                            <td>고기장인</td>
+                            <td>2018.09.07</td>
+                            <td>268</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>1001</td>
+                            <td>덕천동 맛집, 라멘 만땅</td>
+                            <td>길거리 식신</td>
+                            <td>2018.09.03</td>
+                            <td>30</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>1000</td>
+                            <td>최강 볶음밥 레시피</td>
+                            <td>볶아볶아 다 볶아</td>
+                            <td>2018.09.01</td>
+                            <td>132</td>
+                            <td>61</td>
+                        </tr>
+                        <tr>
+                            <td>999</td>
+                            <td>편의점 음식 생존기</td>
+                            <td>배고픈 나그네</td>
+                            <td>2018.09.01</td>
+                            <td>112</td>
+                            <td>31</td>
+                        </tr>
+                        <tr>
+                            <td>998</td>
+                            <td>영국음식이란?</td>
+                            <td>줘도 안먹음</td>
+                            <td>2018.08.29</td>
+                            <td>101</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>997</td>
+                            <td>프랑스요리 vs 중국요리</td>
+                            <td>르꼬르동블</td>
+                            <td>2018.08.29</td>
+                            <td>4001</td>
+                            <td>1023</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </article>
+                <br>
+                <article class="center">
+                    <input type="text" name="text" id="text" placeholder="검색어를 치세요">
+                    <button class="btn" type="submit">검색</button>
+                    <button class="btn" type="submit">목록</button>
+                    <button class="btn" type="submit">글쓰기</button>
+                </article>
+                <article>
+                    <div class="center" style="margin-top:10px;">
+                        <button type="submit" class="btn">이전</button>
+                        <button type="submit" class="btn">1</button>
+                        <button type="submit" class="btn">2</button>
+                        <button type="submit" class="btn">3</button>
+                        <button type="submit" class="btn">4</button>
+                        <button type="submit" class="btn">5</button>
+                        <button type="submit" class="btn">6</button>
+                        <button type="submit" class="btn">7</button>
+                        <button type="submit" class="btn">8</button>
+                        <button type="submit" class="btn">9</button>
+                        <button type="submit" class="btn">10</button>
+                        <button type="submit" class="btn">다음</button>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <section class="center" style="margin-top:40px;">
+                <textarea name="" id="" cols="100" rows="10" placeholder="팁메모"></textarea>
+                <br>
+                <button style="margin-left:545px;">팁메모 다운받기</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

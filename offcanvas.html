@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>라이브러리활용하기2</title>
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <a href="#" class="navbar-brand text-white">Offcanvas navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active text-white">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-secondary">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-secondary">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-secondary">Switch account</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">Switch account</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+                <input type="text" class="form-control mr-2" style="width:200px;">
+                <button class="btn btn-outline-success">search</button>
+        </nav>
+        <div class="nav bg-white shadow">
+                <a href="#" class="nav-link active text-dark"><b>Dashboard</b></a>
+                <a href="#" class="nav-link text-secondary">Freinds <span class="badge">27</span></a>
+                <a href="#" class="nav-link text-secondary">Explore</a>
+                <a href="#" class="nav-link text-secondary">Suggestion</a>
+                <a href="#" class="nav-link text-secondary">Link 1</a>
+                <a href="#" class="nav-link text-secondary">Link 2</a>
+                <a href="#" class="nav-link text-secondary">Link 3</a>
+                <a href="#" class="nav-link text-secondary">Link 4</a>
+                <a href="#" class="nav-link text-secondary">Link 5</a>
+        </div>
+    </header>
+    <main>
+        <section class="mt-5 row">
+            <article class="col-md-2"></article>
+            <article class="col-md-8">
+                <div style="background-color:blueviolet; height: 80px;;" class="card">
+                    <div class="text-white">
+                        <img src="http://getbootstrap.com/docs/4.1/assets/brand/bootstrap-outline.svg" alt="" width="50px;" height="50px;" class="card-image ml-2 mr-3 my-3 float-left">
+                        <div class="text-white clearfix">
+                            <h1 class="mb-0">Bootstrap</h1>    
+                            <p class="text-white">Since 2011</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="card">
+                    <div class="card-head">Recent updates</div>
+                    <div class="card-body">
+                        <button class="btn btn-primary float-left mr-2" style="width:50px; height:50px;"></button>
+                        <p>@username</p> 
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <hr>
+                    </div>
+                </div>
+            </article>
+            <article class="col-md-2"></article>
+        </section>
+    </main>
+</body>
+</html>

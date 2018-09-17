@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>라이브러리활용하기1</title>
+    
+    <link rel="stylesheet" href="../style/css/bootstrap.css">
+    <script src="../style/js/jquery-3.3.1.js"></script>
+    <script src="../style/js/popper.js"></script>
+    <script src="../style/js/bootstrap.js"></script>   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1 class="text-primary">간단한 게시판 만들기</h1>
+    </header>
+    <main>
+        <section class="container">
+            <form action="">
+                <article class="text-center">
+                    <table class="table table-hover table-striped table-bordered">
+                        <thead class="bg-dark text-white">
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>날짜</th>
+                                <th>조회</th>
+                                <th>추천</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-info">
+                            <tr>
+                                <td>5</td>
+                                <td>다섯번째 글</td>
+                                <td>이주홍</td>
+                                <td>2018-09-11</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>네번째 글</td>
+                                <td>이주홍</td>
+                                <td>2018-09-10</td>
+                                <td>3</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>세번째 글</td>
+                                <td>이주홍</td>
+                                <td>2018-09-09</td>
+                                <td>16</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>두번째 글</td>
+                                <td>이주홍</td>
+                                <td>2018-09-08</td>
+                                <td>32</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>첫번째 글</td>
+                                <td>이주홍</td>
+                                <td>2018-09-07</td>
+                                <td>51</td>
+                                <td>6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" class="page-link">이전</a>
+                        </li>
+                        <li class="page-item active">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">4</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">5</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">다음</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="btn-group float-right">
+                        <button class="btn btn-secondary text-white"> &nbsp; 목록 </button>
+                        <button class="btn btn-primary text-white">글쓰기</button>
+                    </div>
+                    <br><br>
+                    <div class="form-group">
+                        <input type="text" class="form-control text-center" placeholder="검색어를 치세요~">
+                        <button class="btn btn-primary btn-block"><i class="fa fa-search" > 검색</i></button>  
+                    </div>
+                </article>
+            </form>
+        </section>
+
+    </main>
+    
+</body>
+</html>
